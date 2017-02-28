@@ -13,6 +13,18 @@
 </head>
 
 <body>
+
+  <!-- JavaScript SDK for Facebook page plugin -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
     <nav id="navigation">
         <header id="header">
             <a href="index.html">
@@ -77,8 +89,18 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
     </nav>
 
 
-    <h2> contact us </h2>
+    <ul class="breadcrumb">
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">CONTACT US</a></li>
+</ul>
 
+
+<div class="container">
+    <h2> Contact Us </h2>
+
+    <p> If you’d like to drop us a tip, report something happening around campus, offer a critique, or simply get in touch – this is the place to do it. Look forward to hearing from you! </p>
+
+</div>
     <!-- form -->
     <div class="contactus">
 
@@ -143,7 +165,6 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
 
     </div>
 
-    <p class="asdf"> asdf </p>
 
     <!-- JavaScript files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
