@@ -101,6 +101,18 @@ section {
     color: black;
 }
 
+.entry-social {margin-bottom: 20px;color: rgb(126, 126, 126);display: block;font-family: 'Open Sans',Tahoma, Verdana, Arial, sans-serif, Faruma, Faseyha;font-size: 14px;font-weight: normal;height: auto;line-height:23.799999237060547px;margin-bottom: 20px;width: 100%;
+width: 100%;float:left;border: solid 0px #aaa;text-align: center;}
+
+.entry-social div {display: block;width:138px;margin:2px;display: inline-block;  
+    vertical-align: middle;}
+
+.entry-social a {text-decoration:none;display: block;padding-left: 20px;color: #FFFFFF !important;font-weight: bold;transition:background-color .3s;    }
+
+.entry-social .fb a {padding: 7px 10px 7px 26px;background: #3B5999 url('http://3.bp.blogspot.com/-yqD2363XuAo/UeDk98twSlI/AAAAAAAAArg/kXIzFBWmczM/s1600/fb14.png') no-repeat 10px center;}
+
+.entry-social .twitter a {padding: 7px 10px 7px 32px;background: #01BBF6 url('http://3.bp.blogspot.com/-0u8P4VQmEeU/UeDlVdilwcI/AAAAAAAAAro/lGTnlvHGyVw/s1600/twitter14.png') no-repeat 8px center;}
+
 
 /* shows hamburger on desktop */
 
