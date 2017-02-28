@@ -23,10 +23,14 @@ body {
     text-decoration: none;
 }
 
-#contactus, .input-group {
+.contactus, .input-group {
     z-index: 0;
 }
 
+.contactus{
+  padding:10px;
+
+}
 
 
 .well {
@@ -55,9 +59,6 @@ body {
     text-transform: uppercase;
 }
 
-.theTriton a{
-
-}
 #navigation.fixed {
     position: fixed;
     top: 0;

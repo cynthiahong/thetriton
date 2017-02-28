@@ -25,65 +25,51 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-    <nav id="navigation">
-        <header id="header">
-            <a href="index.html">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-2">
-                            <p id="clock"></p>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="theTriton"> The Triton </div>
-
-                        </div>
-                        <div class="col-md-3">
-                        </div>
-
-                    </div>
+<!-- navigation bar -->
+<nav id="navigation">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- Clears the float for cs -->
+                <div class="clearfix visible-xs">
                 </div>
-
-
+                <div class="col-md-3 col-xs-12">
+                    <p id="clock"></p>
                 </div>
-
-
-            </a>
-
-
-
-        </header>
-
-        <a href="http://www.accuweather.com/en/us/la-jolla-ca/92037/weather-forecast/2168186" class="aw-widget-legal">
-            <!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-        </a>
-        <div id="awcc1487969653580" class="aw-widget-current" data-locationkey="2168186" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1487969653580"></div>
-
-
-
-
-        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+                <div class="col-md-6">
+                    <a href="index.html">
+                        <div class="theTriton"> The Triton </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <div id="weather"> </div>
+                </div>
+            </div>
         </div>
-        <ul>
-            <a href="#">
-                <li>NEWS</li>
-            </a>
-            <a href="#">
-                <li>OPINIONS</li>
-            </a>
-            <a href="#">
-                <li>A&E</li>
-            </a>
-            <a href="#">
-                <li>STUDENT LIFE</li>
-            </a>
-            <a href="#">
-                <li>GALLERY</li>
-            </a>
-        </ul>
+
+    </header>
+
+
+    <!-- sections in the navigation bar -->
+    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+    </div>
+    <ul>
+        <a href="news.html">
+            <li>NEWS</li>
+        </a>
+        <a href="opinion.html">
+            <li>OPINIONS</li>
+        </a>
+        <a href="A&E.html">
+            <li>A&E</li>
+        </a>
+        <a href="studentlife.html">
+            <li>STUDENT LIFE</li>
+        </a>
+        <a href="gallery.html">
+            <li>GALLERY</li>
+        </a>
+    </ul>
 
 
     </nav>
@@ -96,10 +82,11 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
 
 
 <div class="container">
-    <h2> Contact Us </h2>
-
-    <p> If you’d like to drop us a tip, report something happening around campus, offer a critique, or simply get in touch – this is the place to do it. Look forward to hearing from you! </p>
-
+    <h2 class="title"> Contact Us </h2>
+    <div class="row">
+      <div class="col-md-6">
+    <p class="contactus"> If you’d like to drop us a tip, report something happening around campus, offer a critique, or simply get in touch – this is the place to do it. Look forward to hearing from you! </p>
+</div>
 </div>
     <!-- form -->
     <div class="contactus">
@@ -170,9 +157,7 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.8/validator.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 </body>
 <!-- footer -->
