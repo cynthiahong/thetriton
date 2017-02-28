@@ -15,51 +15,44 @@
     <!-- navigation bar -->
     <nav id="navigation">
         <header id="header">
-            <a href="index.html">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-2">
-                            <p id="clock"></p>
-                        </div>
-                        <div class="col-md-6">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
                             <div class="theTriton"> The Triton </div>
-                        </div>
-                        <div class="col-md-3">
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="weather"> </div>
                     </div>
                 </div>
-                </div>
-            </a>
+            </div>
+
         </header>
-
-        <a href="http://www.accuweather.com/en/us/la-jolla-ca/92037/weather-forecast/2168186" class="aw-widget-legal">
-            <!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-        </a>
-        <div id="awcc1487969653580" class="aw-widget-current" data-locationkey="2168186" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1487969653580"></div>
-
-
 
         <!-- sections in the navigation bar -->
         <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
         <ul>
-            <a href="#">
+            <a href="news.html">
                 <li>NEWS</li>
             </a>
-            <a href="#">
+            <a href="opinions.html">
                 <li>OPINIONS</li>
             </a>
-            <a href="#">
+            <a href="a&e.html">
                 <li>A&E</li>
             </a>
-            <a href="#">
+            <a href="studentlife.html">
                 <li>STUDENT LIFE</li>
             </a>
-            <a href="#">
+            <a href="gallery.html">
                 <li>GALLERY</li>
             </a>
         </ul>
@@ -176,8 +169,6 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
                 <p class="date"> 2/23/2017 </p>
             </div>
             </a>
-
-
         </div>
 
 
@@ -219,7 +210,7 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 </body>
 

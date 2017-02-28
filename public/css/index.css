@@ -1,25 +1,38 @@
-    body {
+
+/* font for the weather is currently not working */
+@font-face {
+    font-family: 'weather';
+    src: url('/fonts/artill_clean_icons-webfont.eot');
+    src: url('fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/artill_clean_icons-webfont.woff') format('woff'), url('fonts/artill_clean_icons-webfont.ttf') format('truetype'), url('fonts/artill_clean_icons-webfont.otf') format('otf'), url('fonts/artill_clean_icons-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
     background-blend-mode: hard-light;
     font-size: 10pt;
     /* font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Vollkorn', serif; */
+    font-family: 'Playfair Display', serif;
+    font-famiy: 'Vollkorn', serif; */
 }
 
+
 #clock {
-    text-align: left;
+    float:right;
     padding-top: 20px;
     vertical-align: middle;
     text-decoration: none;
 }
 
-#contactus, .input-group {
+.contactus, .input-group {
     z-index: 0;
 }
 
-.asdf {
-    padding-bottom: 500px;
+.contactus, .aboutpic{
+  padding:10px;
+
 }
+
 
 .well {
     border: none;
@@ -30,6 +43,11 @@ font-family: 'Vollkorn', serif; */
     position: relative;
     width: 100%;
     display: table;
+}
+
+/* resize icons on contact page */
+.glyphicon{
+  font-size:15px;
 }
 
 .theTriton {
@@ -99,48 +117,7 @@ section {
     padding: 15px 10px;
     cursor: pointer;
     color: black;
-}
-
-.entry-social {
-    margin-bottom: 20px;
-    color: rgb(126, 126, 126);
-    display: block;
-    font-family: 'Open Sans',Tahoma, Verdana, Arial, sans-serif, Faruma, Faseyha;
-    font-size: 14px;
-    font-weight: normal;
-    height: auto;
-    line-height:23.799999237060547px;margin-bottom: 20px;width: 100%;
-    width: 100%;
-    float:left;
-    border: solid 0px #aaa;
-    text-align: center;
-}
-
-.entry-social div {
-    display: block;
-    width:138px;
-    margin:2px;
-    display: inline-block;  
-    vertical-align: middle;
-}
-
-.entry-social a {
-    text-decoration:none;
-    display: block;
-    padding-left: 5px;
-    color: #FFFFFF;
-    font-weight: bold;
-    transition:background-color .3s;    
-}
-
-.entry-social .fb a {
-    padding: 7px 10px 7px 26px;
-    background: #3B5999 url('http://3.bp.blogspot.com/-yqD2363XuAo/UeDk98twSlI/AAAAAAAAArg/kXIzFBWmczM/s1600/fb14.png') no-repeat 10px center;
-}
-
-.entry-social .twitter a {
-    padding: 7px 10px 7px 32px;
-    background: #01BBF6 url('http://3.bp.blogspot.com/-0u8P4VQmEeU/UeDlVdilwcI/AAAAAAAAAro/lGTnlvHGyVw/s1600/twitter14.png') no-repeat 8px center;
+    border: 1px solid #eee;
 }
 
 /* Style the list */
@@ -148,7 +125,7 @@ ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: white;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 /* Display list items side by side */
@@ -173,200 +150,36 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
-
-    @import 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-97/variables.less';
-@import 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/mixins.less';
-@accent: #e74c3c;
-
-@container_width: 800px;
-
-body {
-  background: darken(@white, 5%);
-  font-family: 'proxima-nova-soft', sans-serif;
-  font-size: 14px;
-  .font-smoothing;
-}
-
-.post-module {
-  position: relative;
-  z-index: 1;
-  display: block;
-  background: @white;
-  min-width: 270px;
-  height: 470px;
-  .box-shadow;
-  .transitions;
-  &:hover {
-    .box-shadow(@blur: 35px; @color: fade(@black, 30%););
-    .thumbnail {
-      img {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        transform: scale(1.1);
-        opacity: .6;
-      }
-    }
-    .post-content {
-    }
-  }
-  .thumbnail {
-    background: @black;
-    height: 400px;
-    overflow: hidden;
-    .date {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1;
-      background: @accent;
-      width: 55px;
-      height: 55px;
-      padding: 12.5px 0;
-      .border-radius(100%);
-      color: @white;
-      font-weight: 700;
-      text-align: center;
-      .box-size;
-      .day {
-        font-size: 18px;
-      }
-      .month {
-        font-size: 12px;
-        text-transform: uppercase;
-      }
-    }
-    img {
-      display: block;
-      width: 120%;
-      .transitions;
-    }
-  }
-  .post-content {
-    position: absolute;
-    bottom: 0;
-    background: @white;
-    width: 100%;
-    padding: 30px;
-    .box-size;
-    .transitions(@timing: cubic-bezier(.37,.75,.61,1.05));
-    .category {
-      position: absolute;
-      top: -34px;
-      left: 0;
-      background: @accent;
-      padding: 10px 15px;
-      color: @white;
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    .title {
-      margin: 0;
-      padding: 0 0 10px;
-      color: @dark_gray;
-      font-size: 26px;
-      font-weight: 700;
-    }
-    .sub_title {
-      margin: 0;
-      padding: 0 0 20px;
-      color: @accent;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    .description {
-      display: none;
-      color: @gray;
-      font-size: 14px;
-      line-height: 1.8em;
-    }
-    .post-meta {
-      margin: 30px 0 0;
-      color: @light_gray;
-      .timestamp {
-        margin: 0 16px 0 0;
-      }
-      a {
-        color: @light_gray;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.hover {
-  &:extend(.post-module:hover all);
-  .post-content {
-    .description {
-      display: block !important;
-      height: auto !important;
-      opacity: 1 !important;
-    }
-  }
 }
 
 
-
-.container {
-  max-width: @container_width;
-  min-width: 640px;
-  margin: 0 auto;
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  .column {
-    width: 50%;
-    padding: 0 25px;
-    .box-size;
-    float: left;
-    .demo-title {
-      margin: 0 0 15px;
-      color: @gray;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
-  .info {
-    width: 300px;
-    margin: 50px auto;
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
-    h1 {
-      margin: 0 0 15px;
-      padding: 0;
-      font-size: 24px;
-      font-weight: 400;
-      color: @dark_gray;
-    }
-    span {
-      color: @gray;
-      font-size: 12px;
-      a {
-        color: @black;
-        text-decoration: none;
-      }
-      .fa {
-        color: @accent;
-      }
-    }
-  }
-}
+    text-decoration: none;
 }
 
-  <script>
-  $(window).load(function() {
-  $('.post-module').hover(function() {
-    $(this).find('.description').stop().animate({
-      height: "toggle",
-      opacity: "toggle"
-    }, 300);
-  });
-});
-</script>
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
 
+/* Set a specific color for each brand */
+
+/* Facebook */
+.socialmediaicons .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.socialmediaicons .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
 /* shows hamburger on desktop */
 
 @media screen and (max-width:766px) {
@@ -382,13 +195,16 @@ body {
         padding: 15px;
         text-align: center;
     }
+    #clock, #weather{
+      display: none;
+    }
 }
 
 
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle {
+    .handle, .remove {
         display: none;
     }
     .footer {
@@ -401,3 +217,181 @@ body {
     .border-right {
         border-right: 1px solid black;
     }
+
+    #weather, #clock{
+      margin:auto;
+      clear: right;
+    }
+
+    #clock{
+      margin: auto;
+    }
+
+    /* Docs at http://http://simpleweatherjs.com
+      Look inspired by http://www.degreees.com/
+      Used for demo purposes.
+      Weather icon font from http://fonts.artill.de/collection/artill-weather-icons
+      DO NOT hotlink the assets/font included in this demo. If you wish to use the same font icon then download it to your local assets at the link above. If you use the links below odds are at some point they will be removed and your version will break. */
+
+    #weather {
+        width: 100px;
+        margin: 0px auto;
+        float: left;
+        vertical-align: middle;
+        text-transform: uppercase;
+        padding-top: 20px;
+        text-decoration: none;
+    }
+    #weather i {
+        color: black;
+        font-family: 'weather';
+        /* font-size: 50px; */
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.0;
+        text-transform: none;
+    }
+    #weather h2 {
+        margin: 0 0 8px;
+        color: black;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    }
+    #weather ul {
+        margin: 0;
+        padding: 0;
+    }
+    #weather li {
+        background: black;
+        background: rgba(255, 255, 255, 0.90);
+        padding: 20px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+    #weather .currently {
+        margin: 0 20px;
+    }
+
+
+
+/* check boxes */
+
+
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+/* COLOR OF THE CHECKED BOX */
+.control input:checked ~ .control__indicator {
+  background: #1e73be;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+  color: #000;
+  background: #ccc;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+  border-top-color: #000;
+}
+.select select:disabled ~ .select__arrow {
+  border-top-color: #ccc;
+}

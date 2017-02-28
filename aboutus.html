@@ -9,76 +9,166 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
-
 </head>
 
 <body>
+    <!-- navigation bar -->
     <nav id="navigation">
         <header id="header">
-            <a href="index.html">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-2">
-                            <p id="clock"></p>
-                        </div>
-                        <div class="col-md-6">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
                             <div class="theTriton"> The Triton </div>
-
-                        </div>
-                        <div class="col-md-3">
-                        </div>
-
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="weather"> </div>
                     </div>
                 </div>
-
-
-                </div>
-
-
-            </a>
-
-
+            </div>
 
         </header>
 
-        <a href="http://www.accuweather.com/en/us/la-jolla-ca/92037/weather-forecast/2168186" class="aw-widget-legal">
-            <!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-        </a>
-        <div id="awcc1487969653580" class="aw-widget-current" data-locationkey="2168186" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1487969653580"></div>
 
-
-
-
+        <!-- sections in the navigation bar -->
         <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
         <ul>
-            <a href="#">
+            <a href="news.html">
                 <li>NEWS</li>
             </a>
-            <a href="#">
+            <a href="opinions.html">
                 <li>OPINIONS</li>
             </a>
-            <a href="#">
+            <a href="a&e.html">
                 <li>A&E</li>
             </a>
-            <a href="#">
+            <a href="studentlife.html">
                 <li>STUDENT LIFE</li>
             </a>
-            <a href="#">
+            <a href="gallery.html">
                 <li>GALLERY</li>
             </a>
         </ul>
 
 
     </nav>
+    <ul class="breadcrumb">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+    </ul>
 
-    <h2> about us </h2>
+
+<div class="container">
+    <h2> About Us </h2>
+
+<h3> What is the Triton? </h3>
+<div class="col-md-6">
+<p class="contactus"> Founded in 2015, The Triton is a digital-first, independent, student-run campus newspaper with the goal of covering content relevant to the UCSD community.
+</br></br>
+Created shortly before the defunding of student media at UCSD, The Triton is the sole fully independent student newspaper.  In an era where respected journalists are reprimanded for seeking out the truth, we think it’s important than ever to focus on local, laser focused journalism. </p>
+</div>
 
 
+<img src="https://i1.wp.com/triton.news/wp-content/uploads/2015/11/16252067_10210343028084606_7039046321440502304_o-1.jpg?zoom=2&resize=650%2C433" class="aboutpic" width="100%"></img>
+<em>One of the 2016-2017 Triton staff meetings. </em>
+
+<hr>
+<h3>2016-2017 Senior Editorial Board</h3>
+<p><a href="mailto:editor@triton.news">Gabriel Schneider</a> | <strong>Editor in Chief</strong><br>
+<a href="mailto:managing@triton.news">Aleena Karamally</a> |&nbsp;<strong>Managing Editor</strong><br>
+<a href="mailto:gm@triton.news">Moon Pankam</a> | <strong>General Manager</strong><br>
+<a href="mailto:managing@triton.news">Shine Cho</a> |<strong>&nbsp;News Editor</strong><br>
+<a href="mailto:artsandentertainment@triton.news">Ana Magallanes</a>&nbsp;|&nbsp;<strong>Arts and Media Editor</strong><br>
+<a href="mailto:conch@triton.news">Curtis Yee</a>&nbsp;| &nbsp;<strong>The Conch Editor</strong><br>
+<a href="mailto:opinion@triton.news">Jaz Twersky </a>| <strong>Opinion Editor&nbsp;</strong><br>
+Heather Dewis | <strong>Lead</strong>&nbsp;<b>Copy Editor</b><br>
+<a href="mailto:photography@triton.news">AJ Peterson</a> | <strong>Photography Editor</strong></p>
+
+<hr>
+
+<h2> Code of Ethics </h2>
+
+<p>The Triton follows the Society of Professional Journalists Code of Ethics. It can be accessed at <a href="http://spj.org/ethicscode.asp" target="_blank">spj.org/ethicscode.asp</a> and reads as follows:</p>
+
+<h3> Preamble </h3>
+
+<p>Members of the Society of Professional Journalists believe that public enlightenment is the forerunner of justice and the foundation of democracy. The duty of the journalist is to further those ends by seeking truth and providing a fair and comprehensive account of events and issues. Conscientious journalists from all media and specialties strive to serve the public with thoroughness and honesty. Professional integrity is the cornerstone of a journalist’s credibility. Members of the Society share a dedication to ethical behavior and adopt this code to declare the Society’s principles and standards of practice.</p>
+
+<h3> Seek Truth and Report It </h3>
+
+<p>Journalists should be honest, fair and courageous in gathering, reporting and interpreting information.</p>
+<p><em>Journalists should:</em></p>
+<ul>
+<li>Test the accuracy of information from all sources and exercise care to avoid inadvertent error. Deliberate distortion is never permissible.</li>
+<li>Diligently seek out subjects of news stories to give them the opportunity to respond to allegations of wrongdoing.</li>
+<li>Identify sources whenever feasible. The public is entitled to as much information as possible on sources’ reliability.</li>
+<li>Always question sources’ motives before promising anonymity. Clarify conditions attached to any promise made in exchange for information. Keep promises.</li>
+<li>Make certain that headlines, news teases and promotional material, photos, video, audio, graphics, sound bites and quotations do not misrepresent. They should not oversimplify or highlight incidents out of context.</li>
+<li>Never distort the content of news photos or video. Image enhancement for technical clarity is always permissible. Label montages and photo illustrations.</li>
+<li>Avoid misleading re-enactments or staged news events. If re-enactment is necessary to tell a story, label it.</li>
+<li>Avoid undercover or other surreptitious methods of gathering information except when traditional open methods will not yield information vital to the public. Use of such methods should be explained as part of the story</li>
+<li>Never plagiarize.</li>
+<li>Tell the story of the diversity and magnitude of the human experience boldly, even when it is unpopular to do so.</li>
+<li>Examine their own cultural values and avoid imposing those values on others.</li>
+<li>Avoid stereotyping by race, gender, age, religion, ethnicity, geography, sexual orientation, disability, physical appearance or social status.</li>
+<li>Support the open exchange of views, even views they find repugnant.</li>
+<li>Give voice to the voiceless; official and unofficial sources of information can be equally valid.</li>
+<li>Distinguish between advocacy and news reporting. Analysis and commentary should be labeled and not misrepresent fact or context.</li>
+<li>Distinguish news from advertising and shun hybrids that blur the lines between the two.</li>
+<li>Recognize a special obligation to ensure that the public’s business is conducted in the open and that government records are open to inspection.</li>
+</ul>
+
+<h3> Minimize Harm </h3>
+
+<p>Ethical journalists treat sources, subjects and colleagues as human beings deserving of respect.</p>
+<p><em>Journalists should:</em></p>
+<ul>
+<li>Show compassion for those who may be affected adversely by news coverage. Use special sensitivity when dealing with children and inexperienced sources or subjects.</li>
+<li>Be sensitive when seeking or using interviews or photographs of those affected by tragedy or grief.</li>
+<li>Recognize that gathering and reporting information may cause harm or discomfort. Pursuit of the news is not a license for arrogance.</li>
+<li>Recognize that private people have a greater right to control information about themselves than do public officials and others who seek power, influence or attention. Only an overriding public need can justify intrusion into anyone’s privacy.</li>
+<li>Show good taste. Avoid pandering to lurid curiosity.</li>
+<li>Be cautious about identifying juvenile suspects or victims of sex crimes.</li>
+<li>Be judicious about naming criminal suspects before the formal filing of charges.</li>
+<li>Balance a criminal suspect’s fair trial rights with the public’s right to be informed.</li>
+</ul>
+
+<h3> Act Independently </h3>
+
+<p>Journalists should be free of obligation to any interest other than the public’s right to know.</p>
+<p><em>Journalists should:</em></p>
+<ul>
+<li>Avoid conflicts of interest, real or perceived.</li>
+<li>Remain free of associations and activities that may compromise integrity or damage credibility.</li>
+<li>Refuse gifts, favors, fees, free travel and special treatment, and shun secondary employment, political involvement, public office and service in community organizations if they compromise journalistic integrity.</li>
+<li>Disclose unavoidable conflicts.</li>
+<li>Be vigilant and courageous about holding those with power accountable.</li>
+<li>Deny favored treatment to advertisers and special interests and resist their pressure to influence news coverage.</li>
+<li>Be wary of sources offering information for favors or money; avoid bidding for news.</li>
+</ul>
+
+<h3> Be Accountable </h3>
+<p>Journalists are accountable to their readers, listeners, viewers and each other.</p>
+<p><em>Journalists should:</em></p>
+<ul>
+<li>Clarify and explain news coverage and invite dialogue with the public over journalistic conduct.</li>
+<li>Encourage the public to voice grievances against the news media.</li>
+<li>Admit mistakes and correct them promptly.</li>
+<li>Expose unethical practices of journalists and the news media.</li>
+<li>Abide by the same high standards to which they hold others.</li>
+</ul>
+
+
+<hr>
+</div>
 
     </div>
 
@@ -86,61 +176,70 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+
 
 
 
 </body>
 
 
+<!-- JavaScript files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+
+</body>
+
+
+
 <!-- footer -->
 <footer>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-2">
-                    <a href="aboutus.html">ABOUT </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="contactus.html"> CONTACT US </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="jobs.html"> JOBS </a>
-                </div>
-                <div class="col-md-2">
-                </div>
-            </div>
+<div class="footer">
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-xs-4 col-md-5 col-lg-5">
-                    <div id="copyright">
-                        Content Copyright © 2017 | The Triton
-                    </div>
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-2">
-                </div>
-            </div>
+        <div class="col-md-2">
+            <a href="aboutus.html">ABOUT </a>
+        </div>
+        <div class="col-md-2">
+            <a href="contactus.html"> CONTACT US </a>
+        </div>
+        <div class="col-md-2">
+            <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
+        </div>
+        <div class="col-md-2">
+            <a href="jobs.html"> JOBS </a>
+        </div>
+        <div class="col-md-2">
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-xs-4 col-md-5 col-lg-5">
+            <div id="copyright">
+                Content Copyright © 2017 | The Triton
+            </div>
+        </div>
+        <div class="col-xs-2 col-md-1 col-lg-1">
+            <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
+        </div>
+        <div class="col-xs-2 col-md-1 col-lg-1">
+            <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
+        </div>
+        <div class="col-xs-2 col-md-1 col-lg-1">
+            <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
+        </div>
+        <div class="col-xs-2 col-md-1 col-lg-2">
+        </div>
+    </div>
+</div>
+</div>
+
 </footer>
-
-
 
 </html>
