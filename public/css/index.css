@@ -8,12 +8,15 @@
     font-style: normal;
 }
 
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
 html{
   background-color: white;
 }
 body {
     background-blend-mode: hard-light;
-    font-size: 10pt;
+    font-size: 12pt;
     /* font-family: 'Montserrat', sans-serif;
     font-family: 'Playfair Display', serif;
     font-famiy: 'Vollkorn', serif; */
@@ -57,6 +60,7 @@ h4.author, h3, .text-center{
     position: relative;
     width: 100%;
     display: table;
+    color: white;
 }
 
 /* resize icons on contact page */
@@ -68,10 +72,12 @@ h4.author, h3, .text-center{
     padding: 5px;
     vertical-align: middle;
     font-size: 30pt;
-    color: #000;
+    color: white;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 
 #navigation.fixed {
@@ -79,9 +85,13 @@ h4.author, h3, .text-center{
     top: 0;
     left: 0;
     right: 0;
-    background: white;
     width: 100%;
+    background-color: white;
     z-index: 1;
+}
+
+#header{
+  background-color: #1e73be;
 }
 
 #container {
@@ -284,7 +294,7 @@ ul.breadcrumb li a:hover {
     }
     #weather h2 {
         margin: 0 0 8px;
-        color: black;
+        color: white;
         font-size: 20px;
         font-weight: 300;
         text-align: center;
