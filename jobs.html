@@ -1,124 +1,247 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>The Triton</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="public/css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
+    <title>The Triton</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-    <nav id="navigation">
-<header id="header"> <a href="index.html">
-  <div class="container">
+<body>
+
+  <!-- JavaScript SDK for Facebook page plugin -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- navigation bar -->
+<nav id="navigation">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- Clears the float for cs -->
+                <div class="clearfix visible-xs">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <p id="clock"></p>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html">
+                        <div class="theTriton"> The Triton </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <div id="weather"> </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- sections in the navigation bar -->
+    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+    </div>
+    <ul>
+        <a href="news.html">
+            <li>NEWS</li>
+        </a>
+        <a href="opinions.html">
+            <li>OPINIONS</li>
+        </a>
+        <a href="A&E.html">
+            <li>A&E</li>
+        </a>
+        <a href="studentlife.html">
+            <li>STUDENT LIFE</li>
+        </a>
+        <a href="gallery.html">
+            <li>GALLERY</li>
+        </a>
+    </ul>
+
+
+    </nav>
+
+
+    <ul class="breadcrumb">
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="jobs.html">JOBS</a></li>
+</ul>
+
+
+<div class="container">
+    <h2 class="title"> Jobs </h2>
     <div class="row">
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-2">
-  <p id="clock"></p>
+      <div class="col-md-6">
+<p>The Triton is looking for writers, photographers, and cool people. If you are one, all, or none of these, please feel free to get in touch. We’d love to talk about having you on board.</p>
+
+    <!-- form -->
+    <div class="contactus">
+            <form class="well form-horizontal" action=" " method="post" id="contact_form">
+                <fieldset>
+                    <!-- Name input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"> Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="first_name" placeholder=" Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Message input -->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Why do you want to join our team?</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                      <div class="control-group">
+                        <h4> What section are you interested in? </h4>
+                        <label class="control control--checkbox">News
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Opinion
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">A&E
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Student Life
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Copy Editing
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Photography
+                          <input type="checkbox"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                          <label class="control control--checkbox">Other
+                            <input type="checkbox"/>
+                            <div class="control__indicator"></div>
+                          </label>
+                        <div class="form-group">
+                            
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="If Other, list here"type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Submit button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn">Submit </button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+    </div>
 </div>
-<div class="col-md-6">
-  <div class="theTriton"> The Triton </div>
-
-</div>
-<div class="col-md-3">
-</div>
-
-</div>
-</div>
+    </div>
 
 
-</div>
-
-</a>
-
-
-
-
-</header>
-
-<a href="http://www.accuweather.com/en/us/la-jolla-ca/92037/weather-forecast/2168186" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1487969653580" class="aw-widget-current"  data-locationkey="2168186" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1487969653580"></div>
-
-
-
-
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img></div>
-  <ul>
-    <a href="#"><li>NEWS</li></a>
-    <a href="#"><li>OPINIONS</li></a>
-    <a href="#"><li>A&E</li></a>
-    <a href="#"><li>STUDENT LIFE</li></a>
-    <a href="#"><li>GALLERY</li></a>
-  </ul>
-
-
-</nav>
-
-
-<h2> jobs </h2>
-
-</div>
-<!-- JavaScript files -->
+    <!-- JavaScript files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
-  </body>
-
+</body>
 <!-- footer -->
-  <footer>
-<div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-2">
+                    <a href="aboutus.html">ABOUT </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="contactus.html"> CONTACT US </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="jobs.html"> JOBS </a>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
         </div>
-        <div class="col-md-2">
-          <a href="aboutus.html">ABOUT </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-xs-4 col-md-5 col-lg-5">
+                    <div id="copyright">
+                        Content Copyright © 2017 | The Triton
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-2">
+                </div>
+            </div>
         </div>
-        <div class="col-md-2">
-          <a href="contactus.html"> CONTACT US </a>
-        </div>
-        <div class="col-md-2">
-          <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
-        </div>
-        <div class="col-md-2">
-          <a href="jobs.html"> JOBS </a>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
     </div>
-<div class="container">
-  <div class="row">
-      <div class="col-md-2">
-      </div>
-    <div class="col-xs-4 col-md-5 col-lg-5">
-      <div id="copyright">
-      Content Copyright © 2017 | The Triton
-    </div>
-    </div>
-    <div class="col-xs-2 col-md-1 col-lg-1">
-      <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
-    </div>
-    <div class="col-xs-2 col-md-1 col-lg-1">
-      <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
-    </div>
-    <div class="col-xs-2 col-md-1 col-lg-1">
-      <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
-    </div>
-    <div class="col-xs-2 col-md-1 col-lg-2">
-    </div>
-  </div>
-</div>
-</div>
+</footer>
+
+
+
 
 </html>
