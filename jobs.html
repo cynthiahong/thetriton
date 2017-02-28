@@ -84,106 +84,89 @@
 <div class="container">
     <h2 class="title"> Jobs </h2>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-9">
 <p>The Triton is looking for writers, photographers, and cool people. If you are one, all, or none of these, please feel free to get in touch. We’d love to talk about having you on board.</p>
 
     <!-- form -->
-    <div class="contactus">
-            <form class="well form-horizontal" action=" " method="post" id="contact_form">
-                <fieldset>
-                    <!-- Name input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"> Name</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder=" Name" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Email input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">E-Mail</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Message input -->
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Why do you want to join our team?</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-
-                      <div class="control-group">
-                        <h4> What section are you interested in? </h4>
-                        <label class="control control--checkbox">News
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--checkbox">Opinion
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--checkbox">A&E
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--checkbox">Student Life
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--checkbox">Copy Editing
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--checkbox">Photography
-                          <input type="checkbox"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                          <label class="control control--checkbox">Other
-                            <input type="checkbox"/>
-                            <div class="control__indicator"></div>
-                          </label>
-                        <div class="form-group">
-                            
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <input class="form-control" placeholder="If Other, list here"type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Submit button -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn">Submit </button>
-                        </div>
-                    </div>
-
-                </fieldset>
-            </form>
-    </div>
+    <div class="formbox">
+      <div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
 </div>
+<div class="form-group">
+  <label for="email">Email:</label>
+  <input type="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+  <label for="comment">Why do you want to join our team?</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+<h4> What section are you interested in? </h4>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">News</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Opinion</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">A&E</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Student Life</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Copy Editing</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Photography</span>
+</label>
+</div>
+<div class="checkbox">
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Other</span>
+</label>
+</div>
+<div class="form-group2">
+  <label for="comment">If other, list here:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<br>
+<button type="button" class="btn btn-primary">Submit</button>
+</div>
+</div>
+
+
+<div class="col-sm-3">
+    <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote></div>
+
     </div>
+  </div>
 
 
     <!-- JavaScript files -->
