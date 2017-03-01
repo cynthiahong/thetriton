@@ -66,6 +66,7 @@ li.navi-section2:hover{
   color: black;
 }
 
+
 .footerline{
   height:1px;
   border-bottom:5px solid #1e73be;
@@ -84,7 +85,7 @@ h4.author, h3, .text-center {
 /* it's actually the date */
 
 #clock {
-    float: right;
+    float: left;
     padding-top: 23px;
     vertical-align: middle;
     text-decoration: none;
@@ -132,6 +133,25 @@ h4.author, h3, .text-center {
     font-family: 'Playfair Display', serif;
 }
 
+.theTriton2 {
+    margin: 0 auto;
+    float: right;
+    font-size: 26pt;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 5px;
+    left: 70px;
+}
+
+.nav-img{
+  width: 60px;
+  height: 60px;
+}
+
 #navigation.fixed {
     position: fixed;
     top: 0;
@@ -142,7 +162,8 @@ h4.author, h3, .text-center {
     z-index: 1;
 }
 
-#header {
+
+#header, .handle {
     background-color: #1e73be;
 }
 
@@ -156,6 +177,7 @@ h4.author, h3, .text-center {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .sectiontitle {
@@ -195,7 +217,7 @@ section {
     width: 100%;
     text-align: left;
     box-sizing: border-box;
-    padding: 15px 10px;
+    padding: 1px;
     cursor: pointer;
     color: black;
     border: 1px solid #eee;
@@ -439,7 +461,7 @@ p, li, a{
 #weather {
     width: 100px;
     margin: 0px auto;
-    float: left;
+    float: right;
     vertical-align: middle;
     text-transform: uppercase;
     padding-top: 20px;
@@ -542,7 +564,7 @@ p, li, a{
 
 /* border to square for form */
 
-.form-control {
+.form-control, .btn {
     border-radius: 0px;
 }
 
