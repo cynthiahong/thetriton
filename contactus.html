@@ -14,105 +14,117 @@
 
 <body>
 
-  <!-- JavaScript SDK for Facebook page plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- JavaScript SDK for Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <div id="weather"> </div>
+    <!-- navigation bar -->
+    <nav id="navigation">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div id="weather"> </div>
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <!--  <div id="weather"> </div> -->
+                        <form class="navbar-form" role="search">
+                            <div class="input-group add-on">
+                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
+        </header>
+
+        <!-- sections in the navigation bar -->
+        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
-
-    </header>
-
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul>
-        <a href="news.html">
-            <li>NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li>OPINIONS</li>
-        </a>
-        <a href="A&E.html">
-            <li>A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li>STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li>GALLERY</li>
-        </a>
-    </ul>
-
+        <ul class="navi-section">
+            <a href="news.html">
+                <li class="navi-section2">NEWS</li>
+            </a>
+            <a href="opinions.html">
+                <li class="navi-section2">OPINIONS</li>
+            </a>
+            <a href="a&e.html">
+                <li class="navi-section2">A&E</li>
+            </a>
+            <a href="studentlife.html">
+                <li class="navi-section2">STUDENT LIFE</li>
+            </a>
+            <a href="gallery.html">
+                <li class="navi-section2">GALLERY</li>
+            </a>
+        </ul>
 
     </nav>
+    </br>
 
 
     <ul class="breadcrumb">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="contactus.html">CONTACT US</a></li>
-</ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
 
 
-<div class="container">
-    <h2 class="title"> Contact Us </h2>
-    <div class="row">
-      <div class="col-md-9">
-    <p class="contactus"> If you’d like to drop us a tip, report something happening around campus, offer a critique, or simply get in touch – this is the place to do it. Look forward to hearing from you! </p>
+    <div class="container">
+        <h2 class="title"> Contact Us </h2>
+        <div class="row">
+            <div class="col-md-9">
+                <p class="contactus"> If you’d like to drop us a tip, report something happening around campus, offer a critique, or simply get in touch – this is the place to do it. Look forward to hearing from you! </p>
 
 
 
-<div class="formbox">
-  <div class="form-group">
-<label for="usr">Name:</label>
-<input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-<label for="email">Email:</label>
-<input type="email" class="form-control" id="email">
-</div>
-<div class="form-group">
-<label for="comment">Message:</label>
-<textarea class="form-control" rows="8" id="comment"></textarea>
+                <div class="formbox">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Message:</label>
+                        <textarea class="form-control" rows="8" id="comment"></textarea>
 
 
-<br>
-<button type="button" class="btn btn-primary">Submit</button>
-</div>
-</div>
-</div>
-<div class="col-sm-3">
-    <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote></div>
+                        <br>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
 
 
