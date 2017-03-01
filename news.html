@@ -10,95 +10,80 @@
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 </head>
 
 <body>
+  <!-- navigation bar -->
+  <nav id="navigation">
+      <header id="header">
+          <div class="container">
+              <div class="row">
+                  <!-- Clears the float for cs -->
+                  <div class="clearfix visible-xs">
+                  </div>
+                  <div class="col-md-3 col-xs-12">
+                      <div id="weather"> </div>
+                      <p id="clock"></p>
+                  </div>
+                  <div class="col-md-6">
+                      <a href="index.html">
+                          <div class="theTriton"> The Triton </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3">
+                      <!--  <div id="weather"> </div> -->
+                      <form class="navbar-form" role="search">
+                          <div class="input-group add-on">
+                              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                              <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
 
-  <!-- JavaScript SDK for Facebook page plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+      </header>
 
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <div id="weather"> </div>
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <!--  <div id="weather"> </div> -->
-                    <form class="navbar-form" role="search">
-                        <div class="input-group add-on">
-                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+      <!-- sections in the navigation bar -->
+      <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+      </div>
+      <ul class="navi-section">
+          <a href="news.html">
+              <li class="navi-section2">NEWS</li>
+          </a>
+          <a href="opinions.html">
+              <li class="navi-section2">OPINIONS</li>
+          </a>
+          <a href="a&e.html">
+              <li class="navi-section2">A&E</li>
+          </a>
+          <a href="studentlife.html">
+              <li class="navi-section2">STUDENT LIFE</li>
+          </a>
+          <a href="gallery.html">
+              <li class="navi-section2">GALLERY</li>
+          </a>
+      </ul>
 
-    </header>
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul class="navi-section">
-        <a href="news.html">
-            <li class="navi-section2">NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li class="navi-section2">OPINIONS</li>
-        </a>
-        <a href="a&e.html">
-            <li class="navi-section2">A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li class="navi-section2">STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li class="navi-section2">GALLERY</li>
-        </a>
-    </ul>
-
-</nav>
+  </nav>
 
 </br>
 
 
-
-
-
-<!-- put stuff here -->
-
-<ul class="breadcrumb">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="news.html">NEWS</a></li>
-</ul>
-
 <div class="container">
-<h2> NEWS</h2>
-<p> Write brief description of the section here. </p>
+    <ul class="breadcrumb">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">NEWS</a></li>
+    </ul>
+
+    <h2> NEWS</h2>
+    <p> Relevant and extensive coverage of news and happenings at and around UCSD. <br> By students, for students to increase awareness and cultivate an active and involved student body. <br> If you have any tips or information, please Contact Us.</p>
 
 <hr>
-<h2 class="sectionhome"> <a href="campus.html"> CAMPUS </h2> </a>
+<h2 class="sectionhome"> SUBSECTION </h2>
 
 <!-- section with 4 articles -->
         <div class="row">
@@ -203,6 +188,7 @@
             </a>
           </div>
 
+
 <hr>
 
 
@@ -225,14 +211,18 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
-
+</div>
 </body>
+
+
 
 
 <div class="footerline"> </div>
 <!-- footer -->
 
 <body>
+<div class="container">
+<div class="footerline"> </div>
     <div class="content">
     </div>
     <footer id="myFooter">
@@ -274,7 +264,9 @@
 </body>
 
 
+
 </div>
+
 
 
 
