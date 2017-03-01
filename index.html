@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,6 +22,7 @@
                     <div class="clearfix visible-xs">
                     </div>
                     <div class="col-md-3 col-xs-12">
+                        <div id="weather"> </div>
                         <p id="clock"></p>
                     </div>
                     <div class="col-md-6">
@@ -29,11 +31,18 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <div id="weather"> </div>
+                        <!--  <div id="weather"> </div> -->
+                        <form class="navbar-form" role="search">
+                            <div class="input-group add-on">
+                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-
 
         </header>
 
@@ -42,19 +51,19 @@
         </div>
         <ul class="navi-section">
             <a href="news.html">
-                <li>NEWS</li>
+                <li class="navi-section2">NEWS</li>
             </a>
             <a href="opinions.html">
-                <li>OPINIONS</li>
+                <li class="navi-section2">OPINIONS</li>
             </a>
             <a href="a&e.html">
-                <li>A&E</li>
+                <li class="navi-section2">A&E</li>
             </a>
             <a href="studentlife.html">
-                <li>STUDENT LIFE</li>
+                <li class="navi-section2">STUDENT LIFE</li>
             </a>
             <a href="gallery.html">
-                <li>GALLERY</li>
+                <li class="navi-section2">GALLERY</li>
             </a>
         </ul>
 
@@ -87,45 +96,45 @@
             <div class="col-md-4 border-right">
                 <a href="#">
                     <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1481.jpg?zoom=2&resize=650%2C400" alt="">
-                <h3 class="section-title-home">
+                    <h3 class="section-title-home">
                     The Huge Impact of HDH
                 </h3>
-                <h4 class="author">
+                    <h4 class="author">
                   Jorder Packer | Feb 22, 2017
                 </h4>
-</a>
+                </a>
             </div>
 
             <div class="col-md-4 border-right">
                 <a href="#">
                     <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/04/aslogo-1-1.jpg?zoom=2&resize=650%2C400" alt="">
-                <h3 class="section-title-home">
+                    <h3 class="section-title-home">
                     New VP External Affairs...
                 </h3>
-                <h4 class="author">
+                    <h4 class="author">
                   Maggie Robak | Feb 22, 2017
                 </h4>
-</a>
+                </a>
             </div>
             <div class="col-md-4">
                 <a href="#">
                     <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1714.jpg?zoom=2&resize=650%2C400" alt="">
-                <h3 class="section-title-home">
+                    <h3 class="section-title-home">
                     The Feminist Bookstand...
                 </h3>
-                <h4 class="author">
+                    <h4 class="author">
                   Amarachi Metu | Feb 16, 2017
                 </h4>
-</a>
+                </a>
             </div>
-          </div>
+        </div>
         <hr>
 
 
 
         <!-- section with 4 articles -->
-            <h2 class="sectionhome"> NEWS </h2>
-          </br>
+        <h2 class="sectionhome"> NEWS </h2>
+        </br>
         <div class="row">
             <div class="col-md-7">
                 <a href="#" class="text-center">
@@ -156,9 +165,9 @@
                     <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/IMG_2092.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> UC News </h4>
-              <h4> UCSD STUDENTS PARTICIPATE IN UC-WIDE ACTION AGAINST THE DAKOTA ACCESS PIPELINE </h4>
-              <p class="author"> Sylvia O | Feb 3, 2017 </p>
+                <h4> UC News </h4>
+                <h4> UCSD STUDENTS PARTICIPATE IN UC-WIDE ACTION AGAINST THE DAKOTA ACCESS PIPELINE </h4>
+                <p class="author"> Sylvia O | Feb 3, 2017 </p>
             </div>
             </a>
 
@@ -168,13 +177,13 @@
                     <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/dalai-lama.png?zoom=2&resize=650%2C276" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Campus News </h4>
-              <h4> CHINESE STUDENT ORGANIZATIONS DENOUNCE DALAI LAMA AS COMMENCEMENT SPEAKER </h4>
-              <p class="author"> Triton News Staff | Feb 3, 2017 </p>
+                <h4> Campus News </h4>
+                <h4> CHINESE STUDENT ORGANIZATIONS DENOUNCE DALAI LAMA AS COMMENCEMENT SPEAKER </h4>
+                <p class="author"> Triton News Staff | Feb 3, 2017 </p>
             </div>
             </a>
         </div>
-<hr>
+        <hr>
 
 
 
@@ -182,8 +191,8 @@
 
 
         <!-- section with 4 articles -->
-            <h2 class="sectionhome"> OPINION </h2>
-          </br>
+        <h2 class="sectionhome"> OPINION </h2>
+        </br>
         <div class="row">
             <div class="col-md-7">
                 <a href="#" class="text-center">
@@ -201,9 +210,9 @@
                     <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/image02.jpg?zoom=2&resize=650%2C406" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Opinion </h4>
-              <h4> PROF. NADINE GEORGE-GRAVES: PERFORMANCE IS NOT BENIGN (ON MINSTRELSY; THE COMPTON COOKOUT)</h4>
-              <p class="author"> Nadine George-Graves | Feb 13, 2017 </p>
+                <h4> Opinion </h4>
+                <h4> PROF. NADINE GEORGE-GRAVES: PERFORMANCE IS NOT BENIGN (ON MINSTRELSY; THE COMPTON COOKOUT)</h4>
+                <p class="author"> Nadine George-Graves | Feb 13, 2017 </p>
             </div>
             </a>
 
@@ -213,28 +222,28 @@
                     <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/16179274_1303599543047822_8799367647882151076_o.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Opinion </h4>
-              <h4> REFILWE GQAJELA: THE ‘LUMUMBA-ZAPATA’ COLLECTIVE SHOULD CHANGE THEIR NAME</h4>
-              <p class="author"> Refilwe Gqajela | Feb 13, 2017 </p>
+                <h4> Opinion </h4>
+                <h4> REFILWE GQAJELA: THE ‘LUMUMBA-ZAPATA’ COLLECTIVE SHOULD CHANGE THEIR NAME</h4>
+                <p class="author"> Refilwe Gqajela | Feb 13, 2017 </p>
             </div>
             </a>
 
-        <div class="col-md-2 pad-top">
-            <a href="#">
-                <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/6176668928_IMG_0011-1-1.jpg?zoom=2&resize=650%2C400" alt="">
-        </div>
-        <div class="col-md-3">
-            <h4> Opinion </h4>
-            <h4> JUSTIN HUNTER: VIOLENT PROTEST ISN’T THE WAY TO GO</h4>
-            <p class="author"> Justin Hunter | Feb 9, 2017 </p>
+            <div class="col-md-2 pad-top">
+                <a href="#">
+                    <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/6176668928_IMG_0011-1-1.jpg?zoom=2&resize=650%2C400" alt="">
+            </div>
+            <div class="col-md-3">
+                <h4> Opinion </h4>
+                <h4> JUSTIN HUNTER: VIOLENT PROTEST ISN’T THE WAY TO GO</h4>
+                <p class="author"> Justin Hunter | Feb 9, 2017 </p>
+
+            </div>
+            </a>
+
 
         </div>
-        </a>
 
-
-</div>
-
-<hr>
+        <hr>
 
 
 
@@ -243,8 +252,8 @@
 
 
         <!-- section with 4 articles -->
-            <h2 class="sectionhome"> A&E </h2>
-          </br>
+        <h2 class="sectionhome"> A&E </h2>
+        </br>
         <div class="row">
             <div class="col-md-7">
                 <a href="#" class="text-center">
@@ -275,9 +284,9 @@
                     <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/image00.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Theatre </h4>
-              <h4> THE VAGINA MONOLOGUES: A NEW WAVE</h4>
-              <p class="author"> Ana Magallanes | Feb 10, 2017 </p>
+                <h4> Theatre </h4>
+                <h4> THE VAGINA MONOLOGUES: A NEW WAVE</h4>
+                <p class="author"> Ana Magallanes | Feb 10, 2017 </p>
             </div>
             </a>
 
@@ -287,13 +296,13 @@
                     <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/maarjanuut-1.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Music </h4>
-              <h4> THE LOFT PRESENTS MAARJA NUUT: A CONTEMPORARY CLASSIC </h4>
-              <p class="author"> Saunil Dobariya | Feb 7, 2017 </p>
+                <h4> Music </h4>
+                <h4> THE LOFT PRESENTS MAARJA NUUT: A CONTEMPORARY CLASSIC </h4>
+                <p class="author"> Saunil Dobariya | Feb 7, 2017 </p>
             </div>
             </a>
         </div>
-<hr>
+        <hr>
 
 
 
@@ -301,8 +310,8 @@
 
 
         <!-- section with 4 articles -->
-            <h2 class="sectionhome"> STUDENT LIFE </h2>
-          </br>
+        <h2 class="sectionhome"> STUDENT LIFE </h2>
+        </br>
         <div class="row">
             <div class="col-md-7">
                 <a href="#" class="text-center">
@@ -333,9 +342,9 @@
                     <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/01/n3cudreakow-carlos-santiago-1.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Student Life </h4>
-              <h4> STUDENT BODY UPSET BY MEDIUM SIZED PUDDLE </h4>
-              <p class="author"> Sarah Howell | Jan 9, 2017 </p>
+                <h4> Student Life </h4>
+                <h4> STUDENT BODY UPSET BY MEDIUM SIZED PUDDLE </h4>
+                <p class="author"> Sarah Howell | Jan 9, 2017 </p>
             </div>
             </a>
 
@@ -345,9 +354,9 @@
                     <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2016/11/featured.jpg?zoom=2&resize=650%2C400" alt="">
             </div>
             <div class="col-md-3">
-              <h4> Student Life </h4>
-              <h4> DROWN YOUR FINALS SORROWS IN COFFEE </h4>
-              <p class="author"> Curtis Yee | Dec 5, 2016 </p>
+                <h4> Student Life </h4>
+                <h4> DROWN YOUR FINALS SORROWS IN COFFEE </h4>
+                <p class="author"> Curtis Yee | Dec 5, 2016 </p>
             </div>
             </a>
         </div>
@@ -383,33 +392,19 @@
 
 
 
-<div id="wrap">
-<br><br>
-<div class="container">
-<div id="box">
-<div class="text-center">
-<div class="col-md-12">
-<form role="form" method="get" action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae">
-<div class="form-group">
-<div class="input-group2">
-  <p> Stay informed. Subscribe to our email list.</p>
-<input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your E-Mail">
-<span class="input-group-btn2">
-<button type="submit" class="btn btn-primary">Subscribe</button>
-</span>
-</div>
-</div>
-</form>
-</div>
-</div>
+        </div>
 
-
-
-
-
-
-            <div class="footerline"> </div>
-
+        <hr>
+        <div class="subscribe">
+            <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
+                <div class="description">
+                    <p>Stay informed. </br>Subscribe to our email list.</p>
+                </div>
+                <div class="input2">
+                    <input type="text" class="button" id="email2" name="email" placeholder="EMAIL">
+                    <input type="submit" class="button" id="submit" value="SUBSCRIBE">
+                </div>
+            </form>
         </div>
 
         <!-- JavaScript files -->
@@ -421,59 +416,49 @@
 </body>
 
 
-
-
+<div class="footerline"> </div>
 <!-- footer -->
-<footer>
-  
 
-    <div class="footer">
+<body>
+    <div class="content">
+    </div>
+    <footer id="myFooter">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-2">
-                    <a href="aboutus.html">ABOUT </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="contactus.html"> CONTACT US </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="jobs.html"> JOBS </a>
-                </div>
-                <div class="col-md-2">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-xs-4 col-md-5 col-lg-5">
-                    <div id="copyright">
-                        Content Copyright © 2017 | The Triton
+                <div class="container2">
+                    <div class="col-sm-3">
+                        <h5><a href="aboutus.html"> ABOUT </a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="contactus.html">CONTACT US</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="jobs.html">JOBS</a></h5>
                     </div>
                 </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-2">
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-5">
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
+    <div class="footer-copyright">
+        <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
+            the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
     </div>
 
-</footer>
-
+</body>
 
 
 
