@@ -14,166 +14,171 @@
 
 <body>
 
-  <!-- JavaScript SDK for Facebook page plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- JavaScript SDK for Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <div id="weather"> </div>
+    <!-- navigation bar -->
+    <nav id="navigation">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="weather"> </div>
+                    </div>
                 </div>
             </div>
+
+        </header>
+
+
+        <!-- sections in the navigation bar -->
+        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
-
-    </header>
-
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul>
-        <a href="news.html">
-            <li>NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li>OPINIONS</li>
-        </a>
-        <a href="A&E.html">
-            <li>A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li>STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li>GALLERY</li>
-        </a>
-    </ul>
+        <ul>
+            <a href="news.html">
+                <li>NEWS</li>
+            </a>
+            <a href="opinions.html">
+                <li>OPINIONS</li>
+            </a>
+            <a href="A&E.html">
+                <li>A&E</li>
+            </a>
+            <a href="studentlife.html">
+                <li>STUDENT LIFE</li>
+            </a>
+            <a href="gallery.html">
+                <li>GALLERY</li>
+            </a>
+        </ul>
 
 
     </nav>
 
 
     <ul class="breadcrumb">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="jobs.html">JOBS</a></li>
-</ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="jobs.html">JOBS</a></li>
+    </ul>
 
 
-<div class="container">
-    <h2 class="title"> Jobs </h2>
-    <div class="row">
-      <div class="col-md-9">
-<p>The Triton is looking for writers, photographers, and cool people. If you are one, all, or none of these, please feel free to get in touch. We’d love to talk about having you on board.</p>
+    <div class="container">
+        <h2 class="title"> Jobs </h2>
+        <div class="row">
+            <div class="col-md-9">
+                <p>The Triton is looking for writers, photographers, and cool people. If you are one, all, or none of these, please feel free to get in touch. We’d love to talk about having you on board.</p>
 
-    <!-- form -->
-    <div class="formbox">
-      <div class="form-group">
-  <label for="usr">Name:</label>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="email">Email:</label>
-  <input type="email" class="form-control" id="email">
-</div>
-<div class="form-group">
-  <label for="comment">Why do you want to join our team?</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
+                <!-- form -->
+                <div class="formbox">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Why do you want to join our team?</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
 
-<h4> What section are you interested in? </h4>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">News</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">Opinion</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">A&E</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">Student Life</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">Copy Editing</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">Photography</span>
-</label>
-</div>
-<div class="checkbox">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">Other</span>
-</label>
-</div>
-<div class="form-group2">
-  <label for="comment">If other, list here:</label>
-  <input type="text" class="form-control" id="usr">
-</div>
-<br>
-<button type="button" class="btn btn-primary">Submit</button>
-</div>
-</div>
-
-
-<div class="col-sm-3">
-    <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote></div>
-
-    </div>
-  </div>
+                    <h4> What section are you interested in? </h4>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">News</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Opinion</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">A&E</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Student Life</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Copy Editing</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Photography</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Other</span>
+                        </label>
+                    </div>
+                    <div class="form-group2">
+                        <label for="comment">If other, list here:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
 
 
-    <!-- JavaScript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+            <div class="col-sm-3">
+                <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 </body>
 <!-- footer -->

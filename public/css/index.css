@@ -1,19 +1,27 @@
 
-/* font for the weather is currently not working */
+/* font icon for weather */
 @font-face {
     font-family: 'weather';
-    src: url('/fonts/artill_clean_icons-webfont.eot');
+    src: url('fonts/artill_clean_icons-webfont.eot');
     src: url('fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/artill_clean_icons-webfont.woff') format('woff'), url('fonts/artill_clean_icons-webfont.ttf') format('truetype'), url('fonts/artill_clean_icons-webfont.otf') format('otf'), url('fonts/artill_clean_icons-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
+.box{
+
 }
-html{
-  background-color: white;
+
+/* remove all underline for links */
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
 }
+
+html {
+    background-color: white;
+}
+
 body {
     background-blend-mode: hard-light;
     font-size: 12pt;
@@ -22,17 +30,50 @@ body {
     font-famiy: 'Vollkorn', serif; */
 }
 
-h4.author, h3, .text-center{
+.author{
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+p.sentence{
+  font-family: 'Vollkorn', serif;
+}
+
+
+.email{
+  background-color: #d8d8d8 !important;
+  width: 300px;
+  height: 30px;
+}
+.articletitle{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+ul.navi-section, ul a:hover, .footer, .author, .section-title-home{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.footerline{
+  height:1px;
+  border-bottom:5px solid #1e73be;
+}
+h4.author, h3, .text-center {
     text-align: center;
 }
 
-.text-left{
-  text-align: left;
 
+.text-left {
+    text-align: left;
 }
 
+
+/* it's actually the date */
+
 #clock {
-    float:right;
+    float: right;
     padding-top: 20px;
     vertical-align: middle;
     text-decoration: none;
@@ -42,13 +83,15 @@ h4.author, h3, .text-center{
     z-index: 0;
 }
 
-.contactus, .aboutpic{
-  padding:10px;
-
+.input-group-btn2{
+  float:right;
+}
+.contactus, .aboutpic {
+    padding: 10px;
 }
 
-.formbox{
-  margin-left: 50px;
+.formbox {
+    margin-left: 50px;
 }
 
 .well {
@@ -63,10 +106,8 @@ h4.author, h3, .text-center{
     color: white;
 }
 
-/* resize icons on contact page */
-.glyphicon{
-  font-size:15px;
-}
+
+/* The Triton in Navigation bar */
 
 .theTriton {
     padding: 5px;
@@ -90,21 +131,26 @@ h4.author, h3, .text-center{
     z-index: 1;
 }
 
-#header{
-  background-color: #1e73be;
+#header {
+    background-color: #1e73be;
 }
 
 #container {
     min-height: 300%;
+    padding: 30px !important;
 }
 
 .sectionhome {
     font-size: 30px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .sectiontitle {
     font-size: 30px;
+    color: #919191;
+    font-family: 'Playfair Display', serif;
 }
 
 nav ul {
@@ -144,7 +190,9 @@ section {
     border: 1px solid #eee;
 }
 
+
 /* Style the list */
+
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -152,25 +200,33 @@ ul.breadcrumb {
     font-size: 11px;
 }
 
+
 /* Display list items side by side */
+
 ul.breadcrumb li {
     display: inline;
 }
 
+
 /* Add a slash symbol (/) before/behind each list item */
+
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
 
+
 /* Add a color to all links inside the list */
+
 ul.breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
 }
 
+
 /* Add a color on mouse-over */
+
 ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
@@ -178,6 +234,7 @@ ul.breadcrumb li a:hover {
 
 
 /* Style all font awesome icons */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -186,24 +243,33 @@ ul.breadcrumb li a:hover {
     text-decoration: none;
 }
 
+
 /* Add a hover effect if you want */
+
 .fa:hover {
     opacity: 0.7;
 }
 
+
 /* Set a specific color for each brand */
 
+
 /* Facebook */
+
 .socialmediaicons .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
+
 /* Twitter */
+
 .socialmediaicons .fa-twitter {
     background: #55ACEE;
     color: white;
 }
+
+
 /* shows hamburger on desktop */
 
 @media screen and (max-width:766px) {
@@ -219,21 +285,22 @@ ul.breadcrumb li a:hover {
         padding: 15px;
         text-align: center;
     }
-    #clock, #weather{
+    #clock, #weather {
+        display: none;
+    }
+    .formbox {
+        margin: 0 auto !important;
+    }
+    .form-group {
+        padding: 15px;
+        width: 100% !important;
+    }
+    .btn-primary {
+        padding: 15px;
+    }
+
+    #header{
       display: none;
-    }
-
-    .formbox{
-      margin: 0 auto !important;
-    }
-
-    .form-group{
-      padding: 15px;
-      width: 100% !important;
-    }
-
-    .btn-primary{
-      padding: 15px;
     }
 }
 
@@ -329,7 +396,7 @@ p, li, a{
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle, .remove {
+    .handle, .remove, .back-to-top {
         display: none;
     }
     .footer {
@@ -340,81 +407,141 @@ p, li, a{
         padding-top: 15px;
     }
     .border-right {
-        border-right: 1px solid black;
+        border-right: 1px solid #eee;
+    }
+    #weather, #clock {
+        margin: auto;
+        clear: right;
+    }
+    #clock {
+        margin: auto;
     }
 
-    #weather, #clock{
-      margin:auto;
-      clear: right;
-    }
-
-    #clock{
-      margin: auto;
-    }
+}
 
 
-
-  }
-
-    /* Docs at http://http://simpleweatherjs.com
+/* Docs at http://http://simpleweatherjs.com
       Look inspired by http://www.degreees.com/
       Used for demo purposes.
       Weather icon font from http://fonts.artill.de/collection/artill-weather-icons
       DO NOT hotlink the assets/font included in this demo. If you wish to use the same font icon then download it to your local assets at the link above. If you use the links below odds are at some point they will be removed and your version will break. */
 
-    #weather {
-        width: 100px;
-        margin: 0px auto;
-        float: left;
-        vertical-align: middle;
-        text-transform: uppercase;
-        padding-top: 20px;
-        text-decoration: none;
-    }
-    #weather i {
-        color: black;
-        font-family: 'weather';
-        /* font-size: 50px; */
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1.0;
-        text-transform: none;
-    }
-    #weather h2 {
-        margin: 0 0 8px;
-        color: white;
-        font-size: 20px;
-        font-weight: 300;
-        text-align: center;
-        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    }
-    #weather ul {
-        margin: 0;
-        padding: 0;
-    }
-    #weather li {
-        background: black;
-        background: rgba(255, 255, 255, 0.90);
-        padding: 20px;
-        display: inline-block;
-        border-radius: 5px;
-    }
-    #weather .currently {
-        margin: 0 20px;
-    }
-
-
-.form-group{
-  box-sizing: border-box;
-  width: 250px;
+#weather {
+    width: 100px;
+    margin: 0px auto;
+    float: left;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-decoration: none;
 }
 
-.form-control{
-  border-radius: 0px;
+#weather i {
+    color: white;
+    font-family: 'weather';
+    /* font-size: 50px; */
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0;
+    text-transform: none;
 }
-.form-group2{
-  width: 150px;
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather h2 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
+
+#weather ul {
+    margin: 0;
+    padding: 0;
+}
+
+#weather li {
+    background: black;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#weather .currently {
+    margin: 0 20px;
+}
+
+
+/* form length */
+
+.form-group {
+    box-sizing: border-box;
+    width: 250px;
+}
+
+
+/* border to square for form */
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-group2 {
+    width: 150px;
+}
+
+
+/* submit button */
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #1e73be !important;
@@ -422,3 +549,10 @@ p, li, a{
     border-color: #1e73be !important;
 }
 
+<<<<<<< Updated upstream
+=======
+.pad-top{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+>>>>>>> Stashed changes

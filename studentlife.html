@@ -14,62 +14,65 @@
 
 <body>
 
-  <!-- JavaScript SDK for Facebook page plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- JavaScript SDK for Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <div id="weather"> </div>
+    <!-- navigation bar -->
+    <nav id="navigation">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="weather"> </div>
+                    </div>
                 </div>
             </div>
+
+        </header>
+
+
+        <!-- sections in the navigation bar -->
+        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
-
-    </header>
-
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul>
-        <a href="news.html">
-            <li>NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li>OPINIONS</li>
-        </a>
-        <a href="a&e.html">
-            <li>A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li>STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li>GALLERY</li>
-        </a>
-    </ul>
+        <ul>
+            <a href="news.html">
+                <li>NEWS</li>
+            </a>
+            <a href="opinions.html">
+                <li>OPINIONS</li>
+            </a>
+            <a href="a&e.html">
+                <li>A&E</li>
+            </a>
+            <a href="studentlife.html">
+                <li>STUDENT LIFE</li>
+            </a>
+            <a href="gallery.html">
+                <li>GALLERY</li>
+            </a>
+        </ul>
 
 
     </nav>
@@ -78,21 +81,21 @@
 
 
 
-<!-- put stuff here -->
+    <!-- put stuff here -->
 
-<ul class="breadcrumb">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="studentlife.html">STUDENT LIFE</a></li>
-</ul>
+    <ul class="breadcrumb">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="studentlife.html">STUDENT LIFE</a></li>
+    </ul>
 
-<div class="container">
-<h2> STUDENT LIFE</h2>
-<p> Write brief description of the section here. </p>
+    <div class="container">
+        <h2> STUDENT LIFE</h2>
+        <p> Write brief description of the section here. </p>
 
-<hr>
-<h2 class="sectionhome"> <a href="#"> subsection </h2> </a>
+        <hr>
+        <h2 class="sectionhome"> <a href="#"> subsection </h2> </a>
 
-<!-- section with 4 articles -->
+        <!-- section with 4 articles -->
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
@@ -143,9 +146,9 @@
 
 
         </div>
-<hr>
+        <hr>
 
-<!-- section with 4 articles -->
+        <!-- section with 4 articles -->
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
@@ -193,10 +196,10 @@
                 <p class="date"> 2/23/2017 </p>
             </div>
             </a>
-          </div>
+        </div>
 
-<hr>
-</div>
+        <hr>
+    </div>
 
 
 
@@ -212,50 +215,50 @@
 
 <!-- footer -->
 <footer>
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-                <a href="aboutus.html">ABOUT </a>
-            </div>
-            <div class="col-md-2">
-                <a href="contactus.html"> CONTACT US </a>
-            </div>
-            <div class="col-md-2">
-                <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
-            </div>
-            <div class="col-md-2">
-                <a href="jobs.html"> JOBS </a>
-            </div>
-            <div class="col-md-2">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-xs-4 col-md-5 col-lg-5">
-                <div id="copyright">
-                    Content Copyright © 2017 | The Triton
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-2">
+                    <a href="aboutus.html">ABOUT </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="contactus.html"> CONTACT US </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="jobs.html"> JOBS </a>
+                </div>
+                <div class="col-md-2">
                 </div>
             </div>
-            <div class="col-xs-2 col-md-1 col-lg-1">
-                <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
-            </div>
-            <div class="col-xs-2 col-md-1 col-lg-1">
-                <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
-            </div>
-            <div class="col-xs-2 col-md-1 col-lg-1">
-                <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
-            </div>
-            <div class="col-xs-2 col-md-1 col-lg-2">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-xs-4 col-md-5 col-lg-5">
+                    <div id="copyright">
+                        Content Copyright © 2017 | The Triton
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-1">
+                    <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
+                </div>
+                <div class="col-xs-2 col-md-1 col-lg-2">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </footer>
 

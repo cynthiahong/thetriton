@@ -14,124 +14,132 @@
 
 <body>
 
-  <!-- JavaScript SDK for Facebook page plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- JavaScript SDK for Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <div id="weather"> </div>
+    <!-- navigation bar -->
+    <nav id="navigation">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="weather"> </div>
+                    </div>
                 </div>
             </div>
+
+        </header>
+
+
+        <!-- sections in the navigation bar -->
+        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
         </div>
-
-    </header>
-
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul>
-        <a href="news.html">
-            <li>NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li>OPINIONS</li>
-        </a>
-        <a href="A&E.html">
-            <li>A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li>STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li>GALLERY</li>
-        </a>
-    </ul>
+        <ul>
+            <a href="news.html">
+                <li>NEWS</li>
+            </a>
+            <a href="opinions.html">
+                <li>OPINIONS</li>
+            </a>
+            <a href="A&E.html">
+                <li>A&E</li>
+            </a>
+            <a href="studentlife.html">
+                <li>STUDENT LIFE</li>
+            </a>
+            <a href="gallery.html">
+                <li>GALLERY</li>
+            </a>
+        </ul>
 
 
     </nav>
 
 
     <ul class="breadcrumb">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="makeasubmission.html">MAKE A SUBMISSION</a></li>
-</ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="makeasubmission.html">MAKE A SUBMISSION</a></li>
+    </ul>
 
 
-<div class="container">
-    <h2 class="title"> Make A Submission </h2>
-    <div class="row">
-      <div class="col-md-9">
-<p>Have an opinion relevant to UCSD’s community that you’d like heard?</p>
-<p>There are two types of formats for submitting your opinion.</p>
-<ul>
-<li>Disagree or agree with an article an article or issue published in The Triton?<strong> Letters to the Editor</strong> present an opportunity to respond to any Triton article or pertinent issue affecting the UCSD community. Letters should be around 250 words and may be edited for clarity.</li>
-<li>An<strong> Op-Ed&nbsp;</strong>presents an opportunity to discuss any pertinent issue affecting the UCSD community. Op-Ed’s should be around 600-800 words and may be edited for clarity. We will not publish any articles that are deemed libelous, racist, sexist, homophobic, or clearly written in any other highly offensive manner. Content that is not properly fact checked and/or cited will also not be published. We reserve the right to go through several rounds of editing to make sure the piece is primed to be published. <strong><em>Any content you submit should be relevant to the UCSD community, the UC system, or the surrounding area.</em></strong></li>
-</ul>
+    <div class="container">
+        <h2 class="title"> Make A Submission </h2>
+        <div class="row">
+            <div class="col-md-9">
+                <p>Have an opinion relevant to UCSD’s community that you’d like heard?</p>
+                <p>There are two types of formats for submitting your opinion.</p>
+                <ul>
+                    <li>Disagree or agree with an article an article or issue published in The Triton?<strong> Letters to the Editor</strong> present an opportunity to respond to any Triton article or pertinent issue affecting the UCSD community. Letters
+                        should be around 250 words and may be edited for clarity.</li>
+                    <li>An<strong> Op-Ed&nbsp;</strong>presents an opportunity to discuss any pertinent issue affecting the UCSD community. Op-Ed’s should be around 600-800 words and may be edited for clarity. We will not publish any articles that are deemed
+                        libelous, racist, sexist, homophobic, or clearly written in any other highly offensive manner. Content that is not properly fact checked and/or cited will also not be published. We reserve the right to go through several rounds
+                        of editing to make sure the piece is primed to be published. <strong><em>Any content you submit should be relevant to the UCSD community, the UC system, or the surrounding area.</em></strong></li>
+                </ul>
 
-<p>Please feel free to include a link to a Google Drive article, which allows for content to have links, bulleted lists, and other formatting styles.</p>
+                <p>Please feel free to include a link to a Google Drive article, which allows for content to have links, bulleted lists, and other formatting styles.</p>
 
-<p><em>You may also email your piece to opinion@triton.news.</em></p>
+                <p><em>You may also email your piece to opinion@triton.news.</em></p>
 
 
-    <!-- form -->
-    <div class="formbox">
-      <div class="form-group">
-  <label for="usr">Name:</label>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="email">Email:</label>
-  <input type="email" class="form-control" id="email">
-</div>
-<div class="form-group">
-  <label for="comment">Text of Your Letter/Op-Ed: </label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
+                <!-- form -->
+                <div class="formbox">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Text of Your Letter/Op-Ed: </label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
                     <!-- Submit button -->
                     <br>
                     <button type="button" class="btn btn-primary">Submit</button>
 
-                </fieldset>
-            </form>
-    </div>
-</div>
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
 
-<div class="col-sm-3">
-    <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote></div>
-    </div>
+            <div class="col-sm-3">
+                <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/thetritonnews/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thetritonnews/?fref=ts">The Triton</a></blockquote>
+                </div>
+            </div>
 
-    </div>
+        </div>
 
 
-    <!-- JavaScript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 </body>
 <!-- footer -->
