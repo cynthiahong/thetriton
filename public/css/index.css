@@ -205,7 +205,7 @@ section {
 /* Style the list */
 
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 10px 1px;
     list-style: none;
     background-color: white;
     font-size: 11px;
