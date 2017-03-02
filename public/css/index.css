@@ -22,6 +22,7 @@ html {
 button.btn.btn-default:hover{
   background-color: white;
 }
+
 body {
     background-blend-mode: hard-light;
     font-size: 12pt;
@@ -30,6 +31,10 @@ body {
     font-famiy: 'Vollkorn', serif; */
 }
 
+
+.navi-section{
+  letter-spacing: 2px;
+}
 .author{
   color: #6e6e6e;
   font-size: 14px;
@@ -203,6 +208,8 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 section {
