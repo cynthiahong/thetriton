@@ -343,6 +343,10 @@ ul.breadcrumb li a:hover {
     #header{
       display: none;
     }
+
+    .back-to-top{
+      right:15px !important;
+    }
 }
 
 
@@ -745,4 +749,17 @@ input2:focus {
   outline: none;
   outline: 2px solid #1e73be;
   box-shadow: 0 0 2px #1e73be;
+}
+
+.sorting{
+  padding-right: 50px;
+}
+
+/* style for the back to top button */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display:none;
 }
