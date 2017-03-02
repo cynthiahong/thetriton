@@ -10,26 +10,12 @@
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
 </head>
 
 <body>
 
-    <!-- JavaScript SDK for Facebook page plugin -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- navigation bar -->
-    <nav id="navigation">
+    <!-- navigation bar for desktop-->
+    <nav id="navigation1">
         <header id="header">
             <div class="container">
                 <div class="row">
@@ -58,11 +44,14 @@
                     </div>
                 </div>
             </div>
-
         </header>
+      </nav>
 
+      <!-- navigation for mobile -->
+<nav id = "navigation">
         <!-- sections in the navigation bar -->
-        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+        <div class="handle"><img src="images/menu.svg" class="nav-img"></img>
+          <div class="theTriton2"> The Triton </div>
         </div>
         <ul class="navi-section">
             <a href="news.html">
@@ -86,7 +75,7 @@
   </br>
 
 
-
+<div class="container">
 
     <!-- put stuff here -->
 
@@ -95,7 +84,6 @@
         <li><a href="studentlife.html">STUDENT LIFE</a></li>
     </ul>
 
-    <div class="container">
         <h2> STUDENT LIFE</h2>
         <p> Write brief description of the section here. </p>
 

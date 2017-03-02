@@ -14,21 +14,8 @@
 
 <body>
 
-    <!-- JavaScript SDK for Facebook page plugin -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- navigation bar -->
-    <nav id="navigation">
+    <!-- navigation bar for desktop-->
+    <nav id="navigation1">
         <header id="header">
             <div class="container">
                 <div class="row">
@@ -57,11 +44,14 @@
                     </div>
                 </div>
             </div>
-
         </header>
+      </nav>
 
+      <!-- navigation for mobile -->
+<nav id = "navigation">
         <!-- sections in the navigation bar -->
-        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+        <div class="handle"><img src="images/menu.svg" class="nav-img"></img>
+          <div class="theTriton2"> The Triton </div>
         </div>
         <ul class="navi-section">
             <a href="news.html">
@@ -85,13 +75,13 @@
 
   </br>
 
+<div class="container">
     <ul class="breadcrumb">
         <li><a href="index.html">HOME</a></li>
         <li><a href="jobs.html">JOBS</a></li>
     </ul>
 
 
-    <div class="container">
         <h2 class="title"> Jobs </h2>
         <div class="row">
             <div class="col-md-9">

@@ -66,6 +66,7 @@ ul.navi-section, ul navi-section a:hover, #myFooter, .author, .section-title-hom
 
 li.navi-section2{
   color: #b3b3b3;
+  padding-left: 40px;
 }
 li.navi-section2:hover{
   color: black;
