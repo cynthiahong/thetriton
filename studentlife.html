@@ -10,190 +10,215 @@
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 </head>
 
 <body>
+  <!-- navigation bar -->
+  <nav id="navigation">
+      <header id="header">
+          <div class="container">
+              <div class="row">
+                  <!-- Clears the float for cs -->
+                  <div class="clearfix visible-xs">
+                  </div>
+                  <div class="col-md-3 col-xs-12">
+                      <div id="weather"> </div>
+                      <p id="clock"></p>
+                  </div>
+                  <div class="col-md-6">
+                      <a href="index.html">
+                          <div class="theTriton"> The Triton </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3">
+                      <!--  <div id="weather"> </div> -->
+                      <form class="navbar-form" role="search">
+                          <div class="input-group add-on">
+                              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                              <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
 
-    <!-- navigation bar for desktop-->
-    <nav id="navigation1">
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <!-- Clears the float for cs -->
-                    <div class="clearfix visible-xs">
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div id="weather"> </div>
-                        <p id="clock"></p>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="index.html">
-                            <div class="theTriton"> The Triton </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <!--  <div id="weather"> </div> -->
-                        <form class="navbar-form" role="search">
-                            <div class="input-group add-on">
-                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
-      </nav>
+      </header>
 
-      <!-- navigation for mobile -->
-<nav id = "navigation">
-        <!-- sections in the navigation bar -->
-        <div class="handle"><img src="images/menu.svg" class="nav-img"></img>
-          <div class="theTriton2"> The Triton </div>
-        </div>
-        <ul class="navi-section">
-            <a href="news.html">
-                <li class="navi-section2">NEWS</li>
-            </a>
-            <a href="opinions.html">
-                <li class="navi-section2">OPINIONS</li>
-            </a>
-            <a href="a&e.html">
-                <li class="navi-section2">A&E</li>
-            </a>
-            <a href="studentlife.html">
-                <li class="navi-section2">STUDENT LIFE</li>
-            </a>
-            <a href="gallery.html">
-                <li class="navi-section2">GALLERY</li>
-            </a>
-        </ul>
+      <!-- sections in the navigation bar -->
+      <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+      </div>
+      <ul class="navi-section">
+          <a href="news.html">
+              <li class="navi-section2">NEWS</li>
+          </a>
+          <a href="opinions.html">
+              <li class="navi-section2">OPINIONS</li>
+          </a>
+          <a href="a&e.html">
+              <li class="navi-section2">A&E</li>
+          </a>
+          <a href="studentlife.html">
+              <li class="navi-section2">STUDENT LIFE</li>
+          </a>
+          <a href="gallery.html">
+              <li class="navi-section2">GALLERY</li>
+          </a>
+      </ul>
 
-    </nav>
-  </br>
+  </nav>
+
+</br>
 
 
 <div class="container">
-
-    <!-- put stuff here -->
-
     <ul class="breadcrumb">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="studentlife.html">STUDENT LIFE</a></li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="studentlife.html">STUDENT LIFE</a></li>
     </ul>
 
-        <h2> STUDENT LIFE</h2>
-        <p> Write brief description of the section here. </p>
+    <h2> STUDENT LIFE </h2>
+    <p> Relevant everyday information for all UCSD students: <br> Lists, reviews, profiles, and general musings on campus living.</p>
 
-        <hr>
-        <h2 class="sectionhome"> <a href="#"> subsection </h2> </a>
+<hr>
+<h2 class="sectionhome"> LISTS </h2>
 
-        <!-- section with 4 articles -->
+<!-- section with 4 articles -->
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" width="80%" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" width="100%" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/01/IMG_9339-1.png?resize=650%2C400" alt="">
                 </a>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> subsection | section </h2>
-                        <h1>title</h1>
-                        <h1> author | date </h1>
+                        <h3>UCSD'S Unknown 2nd Best Rankings </h3>
+                        <h5> Mo Elew | Jan 24, 2017 </h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </div>
-            <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
-            </div>
-            </a>
 
             <div class="col-md-2">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/10/IMG_1443.jpg?resize=650%2C400" alt=""> </a>
             </div>
             <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
+                <h3> The Eight Circles Of Geisel </h3>
+                <h5> Matthew Zamudio | Oct 11, 2016 </h5>
             </div>
-            </a>
+
             <div class="col-md-2">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/09/photo-1472772224448-b24d00409675.jpeg?resize=650%2C400" alt=""> </a>
             </div>
             <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
+                <h3> Eight Hacks For UCSD Freshmen </h3>
+                <h5> Mo Elew | Sep 22, 2016 </h5>
             </div>
-            </a>
+         
 
-
+           <div class="col-md-2">
+                <a href="#">
+                    <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2015/09/12048866_10206558519514257_1800701542_n-e1457414189470.jpg?resize=650%2C276" alt=""> </a>
+            </div>
+            <div class="col-md-2">
+                <h3> 4 Tips To Help Get Through Finals Week </h3>
+                <h5> Curtis Yee | Mar 9, 2016 </h5>
+            </div>
         </div>
-        <hr>
+<hr>
 
-        <!-- section with 4 articles -->
+<h2 class="sectionhome"> SATIRE </h2>
+<!-- section with 4 articles -->
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" width="80%" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" width="100%" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/photo-2.jpg?resize=650%2C400" alt="">
                 </a>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> subsection | section </h2>
-                        <h1>title</h1>
-                        <h1> author | date </h1>
+                        <h3>Student Takes Final Shower Before Midterms</h3>
+                        <h5> Sarah Howell | Feb 9, 2017 </h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </div>
-            <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
-            </div>
-            </a>
 
             <div class="col-md-2">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/01/n3cudreakow-carlos-santiago-1.jpg?resize=650%2C400" alt=""> </a>
             </div>
             <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
+                <h3> Student Body Upset By Medium Sized Puddle</h3>
+                <h5> Sarah Howell | Jan 9, 2017</h5>
             </div>
-            </a>
+
             <div class="col-md-2">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/11/featured.jpg?resize=650%2C400" alt=""> </a>
             </div>
             <div class="col-md-2">
-                <p class="sectiontitle"> News </p>
-                <p class="subsectiontitle"> Campus </p>
-                <p class="author"> Bob Ran </p>
-                <p class="date"> 2/23/2017 </p>
+                <h3> Drown Your Finals Sorrows In Coffee </h3>
+                <h5> Curtis Yee | Dec 5, 2016 </h5>
             </div>
-            </a>
+         
+
+           <div class="col-md-2">
+                <a href="#">
+                    <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2016/09/14423952_1145984895495670_382870251_o.jpg?resize=650%2C400" alt=""> </a>
+            </div>
+            <div class="col-md-2">
+                <h3> Freshman Forgets To Peruse 142 Library Walk Fliers </h3>
+                <h5> Sarah Howell | Sep 23, 2016 </h5>
+            </div>
         </div>
+<hr>
 
-        <hr>
+<h2 class="sectionhome"> OTHER </h2>
+
+<!-- section with 4 articles -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" width="100%" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/12/IMG_0879.jpg?resize=650%2C400" alt="">
+                </a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3> Food Review: Lil' Dipper </h3>
+                        <h5> Truman Tse | Dec 2, 2016 </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <a href="#">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/12/upmisxb0wd0-srikanta-h-u.jpg?resize=650%2C400" alt=""> </a>
+            </div>
+            <div class="col-md-2">
+                <h3> UCDC: In The Room Where It Happens </h3>
+                <h5> Cecily Swason | Dec 2, 2016</h5>
+            </div>
+
+            <div class="col-md-2">
+                <a href="#">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/11/fq-boyz_30934494191_o.jpg?resize=650%2C400" alt=""> </a>
+            </div>
+            <div class="col-md-2">
+                <h3> Hullabaloo Lookbook: Are You Ready For Tonight? </h3>
+                <h5> Curtis Yee | Nov 18, 2016</h5>
+            </div>
+         
+
+           <div class="col-md-2">
+                <a href="#">
+                    <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2016/05/audreys-160218.jpg?resize=650%2C400" alt=""> </a>
+            </div>
+            <div class="col-md-2">
+                <h3> Audrey's: Geisel's Welcome Partner </h3>
+                <h5> Truman Tse | May 3, 2016 </h5>
+            </div>
+        </div>
+<hr>
 
         <div class="subscribe">
             <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
@@ -213,56 +238,58 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
-        </body>
+</div>
+</body>
 
 
-        <div class="footerline"> </div>
-        <!-- footer -->
 
-        <body>
-            <div class="content">
-            </div>
-            <footer id="myFooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="container2">
-                            <div class="col-sm-3">
-                                <h5><a href="aboutus.html"> ABOUT </a></h5>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5><a href="contactus.html">CONTACT US</a></h5>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5><a href="jobs.html">JOBS</a></h5>
-                            </div>
-                        </div>
+
+
+<!-- footer -->
+
+<body>
+<div class="container">
+<div class="footerline"> </div>
+    <div class="content">
+    </div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="container2">
+                    <div class="col-sm-3">
+                        <h5><a href="aboutus.html"> ABOUT </a></h5>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-3"> </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-5">
-                            <div class="social-networks">
-                                <a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
+                    <div class="col-sm-3">
+                        <h5><a href="contactus.html">CONTACT US</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="jobs.html">JOBS</a></h5>
                     </div>
                 </div>
-            </footer>
-            <div class="footer-copyright">
-                <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
-                    the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-5">
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        </body>
+    </footer>
+    <div class="footer-copyright">
+        <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
+            the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
+    </div>
 </div>
+</body>
 
-
-
-
+</div>
 
 </html>
