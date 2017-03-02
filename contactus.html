@@ -9,26 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <!-- JavaScript SDK for Facebook page plugin -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- navigation bar -->
-    <nav id="navigation">
+    <!-- navigation bar for desktop-->
+    <nav id="navigation1">
         <header id="header">
             <div class="container">
                 <div class="row">
@@ -57,11 +44,14 @@
                     </div>
                 </div>
             </div>
-
         </header>
+      </nav>
 
+      <!-- navigation for mobile -->
+<nav id = "navigation">
         <!-- sections in the navigation bar -->
-        <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
+        <div class="handle"><img src="images/menu.svg" class="nav-img"></img>
+          <div class="theTriton2"> The Triton </div>
         </div>
         <ul class="navi-section">
             <a href="news.html">
@@ -82,16 +72,17 @@
         </ul>
 
     </nav>
+
+
     </br>
 
-
+    <div class="container">
     <ul class="breadcrumb">
         <li><a href="index.html">HOME</a></li>
         <li><a href="contactus.html">CONTACT US</a></li>
     </ul>
 
 
-    <div class="container">
         <h2 class="title"> Contact Us </h2>
         <div class="row">
             <div class="col-md-9">
@@ -124,10 +115,22 @@
                 </div>
             </div>
         </div>
+
+
+
+
+    <hr>
+    <div class="subscribe">
+        <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
+            <div class="description">
+                <p>Stay informed. </br>Subscribe to our email list.</p>
+            </div>
+            <div class="input2">
+                <input type="text" class="button" id="email2" name="email" placeholder="EMAIL">
+                <input type="submit" class="button" id="submit" value="SUBSCRIBE">
+            </div>
+        </form>
     </div>
-
-
-
 
     <!-- JavaScript files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -135,56 +138,52 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
-</body>
-<!-- footer -->
-<footer>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-2">
-                    <a href="aboutus.html">ABOUT </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="contactus.html"> CONTACT US </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="makeasubmission.html"> MAKE A SUBMISSION </a>
-                </div>
-                <div class="col-md-2">
-                    <a href="jobs.html"> JOBS </a>
-                </div>
-                <div class="col-md-2">
-                </div>
-            </div>
+    </body>
+
+
+    <div class="footerline"> </div>
+    <!-- footer -->
+
+    <body>
+        <div class="content">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-xs-4 col-md-5 col-lg-5">
-                    <div id="copyright">
-                        Content Copyright © 2017 | The Triton
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="container2">
+                        <div class="col-sm-3">
+                            <h5><a href="aboutus.html"> ABOUT </a></h5>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5><a href="contactus.html">CONTACT US</a></h5>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5><a href="jobs.html">JOBS</a></h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.facebook.com/thetritonnews/"><img src="images/facebook.svg" height="50px" width="50px"> </a>
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://twitter.com/Triton_News/"><img src="images/twitter.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-1">
-                    <a href="https://www.instagram.com/triton_news/"><img src="images/instagram.svg" height="50px" width="50px">
-                </div>
-                <div class="col-xs-2 col-md-1 col-lg-2">
+                <div class="row">
+                    <div class="col-sm-3"> </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-5">
+                        <div class="social-networks">
+                            <a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </footer>
+        <div class="footer-copyright">
+            <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
+                the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
         </div>
     </div>
-</footer>
+    </body>
+</div>
 
-
-
-
-</html>
+    </html>
