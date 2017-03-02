@@ -78,7 +78,7 @@ li.navi-section2:hover{
   border-bottom:5px solid #1e73be;
   padding: 5px;
 }
-h4.author, h3, .text-center {
+h4.author, .text-center {
     text-align: center;
 }
 
@@ -745,4 +745,8 @@ input2:focus {
   outline: none;
   outline: 2px solid #1e73be;
   box-shadow: 0 0 2px #1e73be;
+}
+
+.sorting{
+  padding-right: 50px;
 }
