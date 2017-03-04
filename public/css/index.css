@@ -100,7 +100,7 @@ li.dropdown {
     z-index: 9;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     background-color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .dropdown-content a {
