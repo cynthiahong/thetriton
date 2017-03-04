@@ -27,7 +27,7 @@ body {
     background-blend-mode: hard-light;
     font-size: 12pt;
     font-family: 'SourceSansPro', sans-serif;
-    font-family: 'Playfair Display', serif;
+/*    font-family: 'Playfair Display', serif;
     font-famiy: 'Vollkorn', serif; */
 }
 
@@ -777,7 +777,7 @@ text-align: center;
 #email2 {
   width: 100%;
   background: #e3e3e3;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   color: #737373;
   letter-spacing: 1px;
   text-indent: 5%;
@@ -789,7 +789,7 @@ text-align: center;
   width: 40%;
   height: 45px;
   background: #1e73be;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
