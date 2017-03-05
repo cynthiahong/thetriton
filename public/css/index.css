@@ -15,6 +15,10 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+}
+
 html {
     background-color: white;
 }
@@ -186,6 +190,9 @@ h4.author, .text-center {
     margin-bottom: 20px;
 }
 
+a{
+  color: black;
+}
 .sectiontitle {
     font-size: 30px;
     color: #919191;
@@ -356,7 +363,7 @@ a{
   text-decoration: none;
 }
 
-p, li, a{
+p, li {
   font-size: 14px;
 }
 
