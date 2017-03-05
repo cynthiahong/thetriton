@@ -30,14 +30,16 @@ button.btn.btn-default:hover{
 body {
     background-blend-mode: hard-light;
     font-size: 12pt;
-    /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Playfair Display', serif;
+    font-family: 'SourceSansPro', sans-serif;
+/*    font-family: 'Playfair Display', serif;
     font-famiy: 'Vollkorn', serif; */
 }
 
 
 .navi-section{
   letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .author{
   color: #6e6e6e;
@@ -64,9 +66,17 @@ form.navbar-form{
 }
 
 
-ul.navi-section, ul navi-section a:hover, #myFooter, .author, .section-title-home, #clock, #weather, #srch-term{
-  font-family: 'Montserrat', sans-serif !important;
+ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #weather, #srch-term{
+  font-family: 'SourceSansPro', sans-serif !important;
+  font-weight: lighter;
 }
+
+ul.section-title-home, {
+  font-family: 'Merriweather', serif !important;
+  font-weight: lighter;
+}
+
+/*navi and dropdown menu*/
 
 li.navi-section2{
   color: #b3b3b3;
@@ -76,6 +86,37 @@ li.navi-section2:hover{
   color: black;
 }
 
+li a, .navi-section2 {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: grey;
+}
 
 .footerline{
   height:1px;
@@ -84,11 +125,22 @@ li.navi-section2:hover{
 }
 h4.author, .text-center {
     text-align: center;
+    font-family: "SourceSansPro", sans-serif;
+    font-weight: lighter;
 }
 
+.author-left{
+  color: #6e6e6e;
+  font-size: 14px;
+  text-align: left;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
+}
 
 .text-left {
     text-align: left;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
 }
 
 
@@ -96,9 +148,10 @@ h4.author, .text-center {
 
 #clock {
     float: left;
-    padding-top: 23px;
+    padding-top: 27px;
     vertical-align: middle;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .contactus, .input-group {
@@ -183,25 +236,28 @@ h4.author, .text-center {
 }
 
 .sectionhome {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
     margin-bottom: 20px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
 a{
   color: black;
 }
 .sectiontitle {
-    font-size: 30px;
+    font-size: 20px;
     color: #919191;
-    font-family: 'Playfair Display', serif;
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: lighter;
 }
 
 nav ul {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
+  /*  overflow: hidden;  */
     color: white;
     padding: 0;
     text-align: center;
@@ -323,6 +379,7 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width:766px) {
     nav ul {
         max-height: 0;
+        overflow: hidden;
     }
     .showing {
         max-height: 20em;
@@ -490,12 +547,13 @@ p, li {
 #weather i {
     color: white;
     font-family: 'weather';
-    /* font-size: 50px; */
+    font-size: 35px;
     font-weight: normal;
     font-style: normal;
     line-height: 1.0;
     text-transform: none;
 }
+
 
 .icon-0:before { content: ":"; }
 .icon-1:before { content: "p"; }
@@ -549,7 +607,7 @@ p, li {
 #weather h2 {
     margin: 0 0 8px;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
@@ -686,7 +744,7 @@ p, li {
 
 
 /* makes link in footer center align */
-.container2{
+.container2, .letterstoeditor{
 text-align: center;
 }
 
@@ -726,7 +784,7 @@ text-align: center;
 #email2 {
   width: 100%;
   background: #e3e3e3;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   color: #737373;
   letter-spacing: 1px;
   text-indent: 5%;
@@ -738,7 +796,7 @@ text-align: center;
   width: 40%;
   height: 45px;
   background: #1e73be;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
