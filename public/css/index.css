@@ -196,26 +196,13 @@ h4.author, .text-center {
     font-family: 'Playfair Display', serif;
 }
 
-.theTriton2 {
-    margin: 0 auto;
-    float: right;
-    font-size: 26pt;
-    color: white;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    position: fixed;
-    top: 5px;
-    left: 70px;
-}
 
 .nav-img{
   width: 60px;
   height: 60px;
 }
 
-#navigation.fixed {
+#navigation.fixed, #navigation2.fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -271,7 +258,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -390,7 +377,7 @@ ul.breadcrumb li a:hover {
         padding: 15px;
         text-align: center;
     }
-    #clock, #weather {
+    #clock, #weather, #navigation {
         display: none;
     }
     .formbox {
@@ -504,7 +491,7 @@ p, li {
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle, .remove, .back-to-top {
+    .handle, .remove, .back-to-top, #navigation2{
         display: none;
     }
 
@@ -827,4 +814,86 @@ input2:focus {
     bottom: 20px;
     right: 50px;
     display:none;
+}
+
+
+#menu, .sub-menu {
+  display: none;
+  list-style: none;
+  background-color: white;
+}
+
+
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+  left: 17px;
+  top: 17px;
+  z-index: 9;
+  background-color: black;
+}
+
+.blue-header{
+  width:100%;
+  height:55px;
+  background-color: #1e73be;
+  z-index:5;
+  font-size: 30pt;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+ul#menu.tb-mobile-menu{
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition:all .2s;
+   -moz-transition:all .2s;
+     -o-transition:all .2s;
+        transition:all .2s;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/* Style the active toggle here */
+.tb-menu-toggle.tb-active-toggle i {  }
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+     -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+}
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+   -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+     -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+}
+
+#navigation2.fixed{
+  height:50px;
 }
