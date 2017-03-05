@@ -8,7 +8,6 @@
     font-style: normal;
 }
 
-
 /* remove all underline for links */
 
 a:link, a:visited, a:hover, a:active {
@@ -17,6 +16,10 @@ a:link, a:visited, a:hover, a:active {
 
 h3 {
   margin: 0 !important; 
+}
+
+h4 {
+  margin: 0 !important;
 }
 
 html {
@@ -89,8 +92,10 @@ li.navi-section2:hover{
 li a, .navi-section2 {
     display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 li.dropdown {
@@ -285,10 +290,16 @@ section {
 /* Style the list */
 
 ul.breadcrumb {
-    padding: 10px 1px;
     list-style: none;
     background-color: white;
     font-size: 11px;
+    padding-left: 0px;
+}
+
+#homebreadcrumb {
+  padding-left: 0px !important;
+
+
 }
 
 
