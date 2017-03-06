@@ -8,6 +8,8 @@
     font-style: normal;
 }
 
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 /* remove all underline for links */
 
 a:link, a:visited, a:hover, a:active {
@@ -15,7 +17,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 h3 {
-  margin: 0 !important; 
+  margin: 0 !important;
 }
 
 h4 {
@@ -94,7 +96,7 @@ li a, .navi-section2 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  
+
 }
 
 li.dropdown {
@@ -332,11 +334,11 @@ ul.breadcrumb li a {
 
 ul.breadcrumb li a:hover {
     color: #01447e;
- 
+
 }
 
 
-/* Style all font awesome icons */
+/* Style all font awesome icons
 
 .fa {
     padding: 20px;
@@ -344,20 +346,20 @@ ul.breadcrumb li a:hover {
     width: 50px;
     text-align: center;
     text-decoration: none;
-}
+} */
 
 
-/* Add a hover effect if you want */
+/* Add a hover effect if you want
 
 .fa:hover {
     opacity: 0.7;
-}
+} */
 
 
 /* Set a specific color for each brand */
 
 
-/* Facebook */
+/* Facebook
 
 .socialmediaicons .fa-facebook {
     background: #3B5998;
@@ -365,13 +367,61 @@ ul.breadcrumb li a:hover {
 }
 
 
-/* Twitter */
+/* Twitter *
 
 .socialmediaicons .fa-twitter {
     background: #55ACEE;
     color: white;
+} */
+
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 10px;
 }
 
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+a.twitter, a.facebook, a.instagram{
+  padding:0px !important;
+}
+
+.socialbtns .fa {
+	width: 40px;
+    height: 40px;
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #000;
+	padding-top: 12px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #FFF;
+	/*background-color: #000; */
+	border: 1px solid #000;
+}
+
+i.fa.fa-lg.fa-facebook:hover{
+  background-color: #0077e2;
+  border-color: #0077e2;
+}
+
+i.fa.fa-lg.fa-twitter:hover{
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+i.fa.fa-lg.fa-instagram:hover{
+  background-color: #9e6f4f;
+  border-color: #9e6f4f;
+}
 
 /* shows hamburger on desktop */
 
@@ -712,34 +762,6 @@ p, li {
     color: #1e73be;
 }
 
-#myFooter .social-networks {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 16px;
-}
-
-#myFooter .social-networks a {
-    font-size: 32px;
-    color: black;
-    padding: 10px;
-    transition: 0.2s;
-}
-
-#myFooter .social-networks a:hover {
-    text-decoration: none;
-}
-
-#myFooter .facebook:hover {
-    color: #0077e2;
-}
-
-#myFooter .instagram:hover {
-    color: #9e6f4f;
-}
-
-#myFooter .twitter:hover {
-    color: #00aced;
-}
 
 
 /* makes link in footer center align */
