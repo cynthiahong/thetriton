@@ -40,6 +40,11 @@ body {
     font-famiy: 'Vollkorn', serif; */
 }
 
+/* The Triton Logo */
+.tritonlogo{
+  width: 45px;
+  height: 45px;
+}
 
 .navi-section{
   letter-spacing: 2px;
@@ -359,7 +364,7 @@ ul.breadcrumb li a:hover {
 /* Set a specific color for each brand */
 
 
-/* Facebook
+/* Facebook */
 
 .socialmediaicons .fa-facebook {
     background: #3B5998;
@@ -367,12 +372,12 @@ ul.breadcrumb li a:hover {
 }
 
 
-/* Twitter *
+/* Twitter */
 
 .socialmediaicons .fa-twitter {
     background: #55ACEE;
     color: white;
-} */
+}
 
 
 .socialbtns, .socialbtns ul, .socialbtns li {
@@ -381,8 +386,8 @@ ul.breadcrumb li a:hover {
 }
 
 .socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
+    list-style: none outside none !important;
+    display: inline-block !important;
 }
 
 a.twitter, a.facebook, a.instagram{
@@ -439,7 +444,7 @@ i.fa.fa-lg.fa-instagram:hover{
         padding: 15px;
         text-align: center;
     }
-    #clock, #weather, #navigation {
+    #clock, #weather, #navigation, .tritonlogo {
         display: none;
     }
     .formbox {
@@ -553,7 +558,7 @@ p, li {
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle, .remove, .back-to-top, #navigation2{
+    .handle, .remove, .back-to-top, #navigation2, .tritonlogo{
         display: none;
     }
 
@@ -848,6 +853,8 @@ input2:focus {
     bottom: 20px;
     right: 50px;
     display:none;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 
@@ -930,4 +937,86 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 
 #navigation2.fixed{
   height:50px;
+}
+
+
+
+/* Expandable search box from https://codepen.io/mort3za/pen/dPyjMv */
+/* Note: don't change 0.8s in transition. */
+/* --------------------- */
+
+form.search-form{
+  width:200px;
+  height: 30px;
+  margin: 5% auto;
+  padding: 10px;
+}
+
+input.search-text {
+  float: right;
+	color: white;
+	position:relative;
+	z-index:5;
+	transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	height: 30px;
+	width: 0;
+	margin: 0;
+	padding: 5px 0 5px 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-size: 1rem;
+	cursor: pointer;
+/*	border-radius: 30px; */
+	border: 2px solid transparent;
+	background: url(../../images/search.svg) no-repeat left 9px center transparent;
+	/*background: url(https://www.dropbox.com/s/d658ze3j9f5mayv/search.svg?dl=0) no-repeat left 9px center transparent;
+*/  background-size:16px;
+}
+input.search-text:focus {
+	z-index:3;
+	width: 150px;
+	border: 1px solid white;
+	background-color: #328edf;
+	outline: none;
+	cursor:auto;
+	padding-right: 10px;
+}
+
+.search-text::-webkit-input-placeholder { /* Chrome */
+  color: white;
+  font-family: 'SourceSansPro', sans-serif;
+}
+.search-text:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  font-family: 'SourceSansPro', sans-serif;
+}
+.search-text::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: 1;
+  font-family: 'SourceSansPro', sans-serif;
+}
+.search-text:-moz-placeholder { /* Firefox 4 - 18 */
+  color: white;
+  opacity: 1;
+  font-family: 'SourceSansPro', sans-serif;
+}
+
+input.search-submit {
+	position: relative;
+	z-index: 4;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	cursor: pointer;
+	background: none;
+}
+
+input.search-text::-webkit-search-cancel-button {
+	cursor:pointer;
+}
+
+input.placeholder{
+  color: white;
 }

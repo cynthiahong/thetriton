@@ -12,7 +12,6 @@ $(document).ready(function() {
     });
 });
 
-
 /* sticky for mobile */
 $(document).ready(function() {
     var $div = $('#navigation2'),
@@ -27,6 +26,15 @@ $(document).ready(function() {
     });
 });
 
+/* makes the Triton logo appear when scrolled down on desktop */
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 65) {
+        $('.tritonlogo').fadeIn();
+    } else {
+        $('.tritonlogo').fadeOut();
+    }
+});
 
 
 /* get date */
