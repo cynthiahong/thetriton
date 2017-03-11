@@ -22,6 +22,11 @@
   margin: 10px;
 }
 
+.google.button{
+  background-color: #00cdff;
+  margin:10px;
+}
+
 #buttons {
     border-radius: 5px;
     padding: 14px 7px;
@@ -85,8 +90,6 @@
 }
 
 
-
-
 .facebook:hover .slide {
     left: 150px;
 }
@@ -103,6 +106,11 @@
 .twitter .icon {
     background: #00cdff;
 }
+
+.google .icon {
+    background: #00cdff;
+}
+
 
 
 /* remove all underline for links */
@@ -146,6 +154,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 .author{
   color: #6e6e6e;
   font-size: 14px;
@@ -287,7 +297,9 @@ h4.author, .text-center {
     color: white;
 }
 
-
+#navigation2{
+  background-color: white;
+}
 /* The Triton in Navigation bar */
 
 .theTriton {
@@ -317,6 +329,7 @@ h4.author, .text-center {
     width: 100%;
     background-color: white;
     z-index: 1;
+
 }
 
 
@@ -524,7 +537,7 @@ i.fa.fa-lg.fa-instagram:hover{
   border-color: #9e6f4f;
 }
 
-/* shows hamburger on desktop */
+/* shows hamburger on mobile */
 
 @media screen and (max-width:766px) {
     nav ul {
@@ -540,7 +553,7 @@ i.fa.fa-lg.fa-instagram:hover{
         padding: 15px;
         text-align: center;
     }
-    #clock, #weather, #navigation, .tritonlogo {
+     #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop {
         display: none;
     }
     .formbox {
@@ -564,6 +577,10 @@ i.fa.fa-lg.fa-instagram:hover{
 
     #buttons{
       width: 100%;
+    }
+
+    #submit, #email2{
+      font-size: 12px;
     }
 }
 
@@ -652,13 +669,15 @@ p, li {
 }
 
 
-
+.nav-wrapper-desktop{
+  height:58px;
+}
 
 
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle, .remove, .back-to-top, #navigation2, .tritonlogo{
+    .handle, .remove, .back-to-top, #navigation2, .tritonlogo, .nav-wrapper{
         display: none;
     }
 
@@ -963,6 +982,7 @@ input2:focus {
   display: none;
   list-style: none;
   background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -984,15 +1004,19 @@ input2:focus {
   background-color: #1e73be;
   z-index:5;
   font-size: 30pt;
-  color: white;
+  color: white !important;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Playfair Display', serif;
 }
+
+a.whitetext{
+  color:white;
+}
 ul#menu.tb-mobile-menu{
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+padding: 0px;
 }
 
 /*Change toggle color here*/
@@ -1039,6 +1063,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 #navigation2.fixed{
   height:50px;
 }
+
 
 
 
@@ -1120,4 +1145,94 @@ input.search-text::-webkit-search-cancel-button {
 
 input.placeholder{
   color: white;
+}
+
+
+/* float social icons from https://codepen.io/thecenteno/pen/JGPpxW */
+
+#socialarea {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  z-index: 9999;
+}
+
+#socialarea:hover, #socialarea2:hover {
+  cursor: pointer;
+}
+
+#socialarea ul, #sociallist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#socialarea li{
+  text-align: center;
+  width: 100%;
+}
+#socialarea2 li{
+  text-align: center;
+  display: inline-block;
+}
+
+#socialarea li a, #socialarea2 li a {
+  color: white;
+}
+
+.facebook_social2, .twitter_social2, .googleplus_social2{
+  width: 160px;
+}
+#socialarea .facebook_social, #socialarea2 .facebook_social2 {
+  background-color: #3a579a;
+  transition: 400ms;
+  padding:0px;
+}
+
+#socialarea .facebook_social:hover, #socialarea2 .facebook_social2:hover {
+  background-color: #2b4071;
+  padding:0px;
+}
+
+#socialarea .twitter_social, #socialarea2 .twitter_social2 {
+  background-color: #00abf0;
+  transition: 400ms;
+  padding:0px;
+}
+
+#socialarea .twitter_social:hover, #socialarea2 .twitter_social2:hover  {
+  background-color: #0184b9;
+}
+
+#socialarea .googleplus_social,#socialarea2 .googleplus_social2 {
+  background-color: #df4a32;
+  transition: 400ms;
+}
+
+.googleplus_social a, .googleplus_social2 a{
+  padding: 14px;
+}
+
+#socialarea .googleplus_social2:hover,#socialarea2 .googleplus_social2:hover {
+  background-color: #bc3e2a;
+}
+
+li a .googleplus_social2{
+  padding:0px;
+}
+
+.remove {
+  left: -35px !important;
+  position: relative;
+  transition: 400ms;
+}
+
+.line{
+  width: 80%;
+  border: 1px solid black;
+  text-align: center;
+}
+.half{
+  width: 50%;
+  float: left;
 }

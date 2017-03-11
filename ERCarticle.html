@@ -8,13 +8,133 @@
     <title>The Triton</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
+    <!-- for the slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 </head>
 
 <body>
+
+    <!-- header bar for desktop-->
+    <nav id="navigation1">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div id="weather"> </div>
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                      <form action="search.html" role="search" class="search-form">
+                          <input type="submit" value="" class="search-submit">
+                          <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
+                      </form>
+                        <!--  <div id="weather"> </div>
+                        <form class="navbar-form" action="search.html">
+                            <div class="input-group add-on">
+                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                <a href="search.html"><div class="input-group-btn">
+                                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button> </a>
+                                </div>
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </header>
+      </nav>
+
+      <!-- navigation for desktop -->
+<nav id = "navigation">
+        <!-- sections in the navigation bar -->
+        <ul class="navi-section">
+<!-- add logo here for navi scroll -->
+            <a href="index.html"><img src ="images/tritonlogo.svg" class="tritonlogo"></img></a>
+
+  	<li class="dropdown">
+        <a href="news.html" class="navi-section2">NEWS</a>
+        <div class="dropdown-content collapse" >
+            <a href="campus.html">CAMPUS NEWS</a>
+            <a href="#">UC NEWS</a>
+        </div>
+    </li>
+  	<li class="dropdown">
+        <a href="opinions.html" class="navi-section2">OPINIONS</a>
+        <div class="dropdown-content collapse">
+            <a href="editorial.html">EDITORIAL</a>
+            <a href="submission.html">SUBMISSION</a>
+        </div>
+    </li>
+  	<li class="dropdown">
+        <a href="a&e.html" class="navi-section2">A&E</a>
+        <div class="dropdown-content collapse">
+            <a href="editorial.html">DANCE</a>
+            <a href="submission.html">LITERATURE</a>
+        </div>
+    </li>
+  	<li class="dropdown">
+        <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
+        <div class="dropdown-content collapse">
+            <a href="editorial.html">SATIRE</a>
+            <a href="submission.html">FOOD REVIEW</a>
+        </div>
+    </li>
+            <a href="gallery.html" class="navi-section2">
+                <li class="navi-section2">GALLERY</li>
+            </a>
+        </ul>
+</nav>
+
+
+<!-- Mobile Navigation -->
+
+<div id ="navigation2">
+  <div class="blue-header">
+    The Triton </div>
+    <div id="menu-toggle">
+  </div>
+    <ul id="menu">
+      <li><a href="news.html">NEWS</a>
+        <ul class="sub-menu">
+          <li><a href="#">CAMPUS NEWS</a></li>
+          <li><a href="#">UC NEWS</a></li>
+        </ul>
+      </li>
+      <li><a href="#">OPINION</a>
+        <ul class="sub-menu">
+          <li><a href="#">EDITORIAL</a></li>
+          <li><a href="#">SUBMISSION</a></li>
+        </ul>
+      </li>
+      <li><a href="#">A&E</a>
+        <ul class="sub-menu">
+          <li><a href="#"> DANCE</a></li>
+          <li><a href="#">LITERATURE</a></li>
+        </ul>
+      </li>
+      <li><a href="#">STUDENT LIFE</a>
+        <ul class="sub-menu">
+          <li><a href="#"> SATIRE </a></li>
+          <li><a href="#">FOOD REVIEWS</a></li>
+        </ul>
+      </li>
+      <li><a href="#">GALLERY</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <!-- JavaScript SDK for Facebook page plugin -->
 <div id="fb-root"></div>
@@ -26,65 +146,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- navigation bar -->
-<nav id="navigation">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Clears the float for cs -->
-                <div class="clearfix visible-xs">
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <div id="weather"> </div>
-                    <p id="clock"></p>
-                </div>
-                <div class="col-md-6">
-                    <a href="index.html">
-                        <div class="theTriton"> The Triton </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <!--  <div id="weather"> </div> -->
-                    <form class="navbar-form" role="search">
-                        <div class="input-group add-on">
-                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-    <!-- sections in the navigation bar -->
-    <div class="handle"><img src="images/menu.svg" width="40px" height="40px"></img>
-    </div>
-    <ul class="navi-section">
-        <a href="news.html">
-            <li class="navi-section2">NEWS</li>
-        </a>
-        <a href="opinions.html">
-            <li class="navi-section2">OPINIONS</li>
-        </a>
-        <a href="a&e.html">
-            <li class="navi-section2">A&E</li>
-        </a>
-        <a href="studentlife.html">
-            <li class="navi-section2">STUDENT LIFE</li>
-        </a>
-        <a href="gallery.html">
-            <li class="navi-section2">GALLERY</li>
-        </a>
-    </ul>
-
-</nav>
 
 </br>
 <div class="container">
 <ul class="breadcrumb">
+  <div id="start"></div>
   <li><a id="homebreadcrumb" href="index.html">HOME</a></li>
   <li><a href="news.html">NEWS</a></li>
   <li><a href="campus.html">CAMPUS</a></li>
@@ -99,6 +165,7 @@
     <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/16422648_1315568128517630_5441239438586852194_o-1.jpg?zoom=2&resize=650%2C400" </img>
     <p> Photo courtesy of UCSD Publications. </p>
     <br>
+
     <p> The Student Council for Eleanor Roosevelt College (SCERC) allotted $7,500 of its yearly budget to its annual council retreat fund this school year, compared to Warren, Muir, Revelle and Marshall which allocated $3,969, $500, $308 and $473 respectively. While the Sixth College Council is still working on their year-long budget, they designated $519 last year.
 <br>
 <br>
@@ -147,6 +214,7 @@ Scott said it has been a standard practice for over 20 years for SCERC to take a
 According to DiBenedetto, between 2011-12 and last year, the council decided not to do an overnight fall retreat. This led to problems where council members were not able to learn everything they needed. Last year was the first year SCERC brought back the overnight retreat of one night, DiBenedetto said.
 <br>
 <br>
+<div id="end"></div>
 After feedback from last year’s overnight retreat, DiBenedetto said SCERC decided to bring back the two-night fall retreat this year.
 <br>
 <br>
@@ -171,7 +239,7 @@ Travel time from UCSD to Julian is about an hour and a half each way.
 “There’s so much you have to know,” Vice President External Ashley Awe said. “You really have to have a two night retreat. There’s just not enough time otherwise.” </p>
 
 
-
+<!--
 <div id="buttons">
   <div class="facebook button">
     <i class="icon">
@@ -192,9 +260,38 @@ Travel time from UCSD to Julian is about an hour and a half each way.
       TWEET
     </p>
   </div>
-  </div>
 
+  <div class="google button">
+  <i class="icon">
+    <i class="fa fa-google">
+  </i>
+</i>
+<div class="slide">
+  <p class="share">
+    google+
+  </p>
 </div>
+  </div>
+</div> -->
+<div id="socialarea2">
+<ul id="sociallist">
+<li class="facebook_social2"> <a class="removepadding" target="_new"><i class="fa fa-facebook"></i> SHARE </a></li>
+<li class="twitter_social2"> <a class="removepadding" target="_new"><i class="fa fa-twitter"></i> TWEET </a></li>
+<li class="googleplus_social2"> <a target="_new"><i class="fa fa-google-plus"></i> SHARE  </a></li>
+</ul>
+</div>
+
+
+
+  <div id="socialarea">
+  <ul id="sociallist">
+    <li class="facebook_social"> <a class="removepadding" target="_new"><i class="fa fa-facebook"></i></a> </li>
+    <li class="twitter_social"> <a class="removepadding" target="_new"><i class="fa fa-twitter"></i></a> </li>
+    <li class="googleplus_social"> <a target="_new"><i class="fa fa-google-plus"></i></a> </li>
+  </ul>
+</div>
+
+
 
 
 
@@ -224,7 +321,6 @@ Travel time from UCSD to Julian is about an hour and a half each way.
             <p class="author"> Zack Gianino | Jan 11, 2017</p>
         </center>
 </div>
-
 
 <div class="col-xs-12">
 <hr>

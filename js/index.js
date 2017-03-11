@@ -16,6 +16,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     var $div = $('#navigation2'),
         posTop = $div.position().top;
+
     $(window).scroll(function() {
         var y = $(this).scrollTop();
         if (y > posTop) {
@@ -163,3 +164,34 @@ $('#menu-toggle').threeBarToggle({color: 'white', width: 30, height: 25});
 // Make any nested ul-based menu mobile
 // Optional arguments are 'speed' and 'accordion' (true or false) to disable the behavior of closing other sub
 $('#menu').accordionMenu();
+
+
+/* share button appears when reading the article and then hides completely on mobile */
+$(document).ready(function() {
+
+    $('#socialarea').hide(); //hide your div initially
+    var myWidth = window.innerWidth;
+    var topOfOthDiv1 = $('#start').offset().top;
+    var topOfOthDiv3 = $('#end').offset().top;
+    if (myWidth > 1000) {
+    //load file for screen width 1000 and up here
+    $(window).scroll(function() {
+        if($(window).scrollTop() < topOfOthDiv1)
+        {
+             $('#socialarea').fadeOut(200);
+        }
+        else
+        {
+            if($(window).scrollTop() < topOfOthDiv3) {
+                $('#socialarea').fadeIn(200);
+            }
+            else if($(window).scrollTop() > topOfOthDiv3) {
+                $('#socialarea').fadeOut(200);
+            }
+        }
+    });
+  }
+  else{
+    $('#socialarea').hide();
+  }
+});

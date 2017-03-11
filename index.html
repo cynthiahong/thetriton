@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
+    <!-- for the slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 </head>
 
 <body>
@@ -51,7 +55,7 @@
             </div>
         </header>
       </nav>
-
+  <div class="nav-wrapper-desktop">
       <!-- navigation for desktop -->
 <nav id = "navigation">
         <!-- sections in the navigation bar -->
@@ -87,10 +91,8 @@
             <a href="submission.html">FOOD REVIEW</a>
         </div>
     </li>
-            <a href="gallery.html" class="navi-section2">
-                <li class="navi-section2">GALLERY</li>
-            </a>
         </ul>
+      </div>
 </nav>
 
 
@@ -98,39 +100,38 @@
 
 <div id ="navigation2">
   <div class="blue-header">
-    The Triton </div>
-    <div id="menu-toggle">
+    <a href="index.html" class="whitetext">The Triton </a>
   </div>
+    <div id="menu-toggle"></div>
     <ul id="menu">
       <li><a href="news.html">NEWS</a>
-        <ul class="sub-menu">
-          <li><a href="#">CAMPUS NEWS</a></li>
-          <li><a href="#">UC NEWS</a></li>
-        </ul>
+        <div align="center">
+          <div class="line"></div></div>
+          <li class="half"><a href="campus.html">CAMPUS NEWS</a></li>
+          <li class="half"><a href="#">UC NEWS</a></li>
       </li>
       <li><a href="#">OPINION</a>
-        <ul class="sub-menu">
-          <li><a href="#">EDITORIAL</a></li>
-          <li><a href="#">SUBMISSION</a></li>
-        </ul>
+        <div align="center">
+        <div class="line"></div></div>
+          <li class="half"><a href="#">EDITORIAL</a></li>
+          <li class="half"><a href="#">SUBMISSION</a></li>
       </li>
       <li><a href="#">A&E</a>
-        <ul class="sub-menu">
-          <li><a href="#"> DANCE</a></li>
-          <li><a href="#">LITERATURE</a></li>
-        </ul>
+        <div align="center">
+        <div class="line"></div></div>
+          <li class="half"><a href="#"> DANCE</a></li>
+          <li class="half"><a href="#">LITERATURE</a></li>
       </li>
       <li><a href="#">STUDENT LIFE</a>
-        <ul class="sub-menu">
-          <li><a href="#"> SATIRE </a></li>
-          <li><a href="#">FOOD REVIEWS</a></li>
-        </ul>
+        <div align="center">
+        <div class="line"></div></div>
+          <li class="half"><a href="#"> SATIRE </a></li>
+          <li class="half"><a href="#">FOOD REVIEWS</a></li>
       </li>
-      <li><a href="#">GALLERY</a>
+      <li><a href="#"></a>
       </li>
     </ul>
   </div>
-</nav>
 
 
 
@@ -423,9 +424,9 @@
 
 
 
-        <hr>
 
-        <!-- Gallery -->
+
+        <!-- Gallery
         <h2 class="sectionhome"> GALLERY</h2>
         <div class="container">
             <div class="row">
@@ -448,10 +449,10 @@
                 <p class="date"> 2/23/2017 </p>
             </center>
 
+-->
 
 
 
-        </div>
 
         <hr>
         <div class="subscribe">
@@ -471,7 +472,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
-
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </body>
 
 
@@ -493,7 +494,7 @@
                         <h5><a href="contactus.html">CONTACT US</a></h5>
                     </div>
                     <div class="col-sm-3">
-                        <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
+                        <h5><a href="makeasubmission.html">SUBMIT A STORY</a></h5>
                     </div>
                     <div class="col-sm-3">
                         <h5><a href="jobs.html">JOBS</a></h5>
@@ -520,7 +521,7 @@
 </div>
 </body>
 
-
+</div>
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 </html>
