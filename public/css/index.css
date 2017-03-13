@@ -347,13 +347,6 @@ h4.author, .text-center {
     padding: 30px !important;
 }
 
-.sectionhome {
-    font-size: 40px;
-    font-family: 'Merriweather', serif;
-    font-weight:bold;
-    margin-top: 10px !important;
-    margin-bottom: 0px !important;
-}
 
 
 .section_name {
@@ -752,7 +745,7 @@ p, li {
     float: right;
     vertical-align: middle;
     text-transform: uppercase;
-    
+
     text-decoration: none;
 }
 
@@ -1024,7 +1017,7 @@ input2:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   padding: 20px;
   overflow-y: scroll;
-  height: calc(100% - 50px - 55px);
+  /* height: calc(100% - 50px - 55px); */
   width: 100%;
 
 
@@ -1296,7 +1289,7 @@ li a .googleplus_social2{
 
 .line{
   width: 80%;
-  border: 1px solid black;
+  border: 1px solid white;
   text-align: center;
 }
 .half{
