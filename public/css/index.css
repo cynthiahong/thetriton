@@ -23,6 +23,10 @@
     display: none;
 }
 
+#article-big-title {
+  padding-top: 15px;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
