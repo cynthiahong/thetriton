@@ -398,7 +398,8 @@ h4.author, .text-center {
   float:right;
 }
 .contactus, .aboutpic {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
 }
 
 .formbox {
