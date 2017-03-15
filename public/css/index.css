@@ -86,7 +86,7 @@
 }
 
 #article-text {
-font-size: 18px;
+font-size: 17px;
 }
 
 .active, .dot:hover {
@@ -238,7 +238,7 @@ h3 {
 
 h4 {
   margin: 0 !important;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 html {
@@ -295,14 +295,13 @@ form.navbar-form{
   font-weight: bold;
 }
 
-
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #weather, #srch-term{
   font-family: 'SourceSansPro', sans-serif !important;
   font-weight: lighter;
 }
 
 .subsectiontitle {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 ul.section-title-home, {
@@ -363,8 +362,12 @@ h4.author, .text-center {
     text-align: center;
     font-family: "SourceSansPro", sans-serif;
     font-weight: lighter;
+    font-size: 14px;
 }
-
+h4.subsectiontitle {
+    font-size: 14px;
+    font-weight: lighter;
+}
 .author-left{
   color: #6e6e6e;
   font-size: 14px;
@@ -533,6 +536,7 @@ section {
 #subsection-title{
   padding-bottom: 5px !important;
   margin: 0 !important;
+  font-size: 
 }
 
 h2 {
