@@ -116,6 +116,7 @@ a.slide_btn {
 <<<<<<< HEAD
 #article-text {
 font-size: 18px;
+<<<<<<< HEAD
 padding-top: 10px;
 =======
 .slide_btn.active, .slide_btn:hover {
@@ -123,6 +124,8 @@ padding-top: 10px;
   cursor: pointer;
   background-color: white;
 >>>>>>> b72ab5a312ac36f00f816d0cc0ef369e9e1c1ce3
+=======
+>>>>>>> parent of c49c91b... changes
 }
 
 .directional_nav {
@@ -362,6 +365,7 @@ form.navbar-form {
 
 <<<<<<< HEAD
 .subsectiontitle {
+<<<<<<< HEAD
   font-size: 10px;
   line-height: 1;
   background-color: #222222;
@@ -375,6 +379,9 @@ ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, 
     font-family: 'SourceSansPro', sans-serif !important;
     font-weight: lighter;
 >>>>>>> b72ab5a312ac36f00f816d0cc0ef369e9e1c1ce3
+=======
+  padding-bottom: 10px;
+>>>>>>> parent of c49c91b... changes
 }
 
 
