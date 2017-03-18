@@ -14,21 +14,6 @@
 }
 
 
-/* Slideshow container
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-
-/* Next & previous buttons
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -97,7 +82,7 @@
 }
 */
 #article-text {
-    font-size: 18px;
+font-size: 17px;
 }
 
 .active, .dot:hover {
@@ -278,28 +263,28 @@ a.slide_btn {
   width: 450px;
   background-color: black;
   position: absolute;
-  top: 370px;
+  top: 380px;
 }
 .slideshow-caption2{
   opacity: 0.85;
   width: 320px;
   background-color: black;
   position: absolute;
-  top: 370px;
+  top: 380px;
 }
 .slideshow-caption3{
   opacity: 0.85;
   width: 340px;
   background-color: black;
   position: absolute;
-  top: 370px;
+  top: 380px;
 }
 .slideshow-caption4{
   opacity: 0.85;
   width: 500px;
   background-color: black;
   position: absolute;
-  top: 370px;
+  top: 380px;
 }
 
 
@@ -413,7 +398,7 @@ h3 {
 
 h4 {
     margin: 0 !important;
-    padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 html {
@@ -466,6 +451,7 @@ form.navbar-form {
     height: 30px;
 }
 
+
 .articletitle {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
@@ -477,9 +463,6 @@ ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, 
     font-weight: lighter;
 }
 
-.subsectiontitle {
-    padding-bottom: 10px;
-}
 
 ul.section-title-home, {
     font-family: 'Merriweather', serif !important;
@@ -540,7 +523,13 @@ h4.author, .text-center {
     text-align: center;
     font-family: "SourceSansPro", sans-serif;
     font-weight: lighter;
+    font-size: 14px;
 }
+h4.subsectiontitle {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
 
 .author-left {
     color: #6e6e6e;
@@ -576,7 +565,8 @@ h4.author, .text-center {
 }
 
 .contactus, .aboutpic {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
 }
 
 .formbox {
