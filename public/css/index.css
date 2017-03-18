@@ -834,6 +834,9 @@ i.fa.fa-lg.fa-instagram:hover {
       font-size: 12px;
     }
 
+    .subsectiontitle{
+      padding-top: 5px;
+    }
     /* hide stuff on mobile */
     #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop {
         display: none;
