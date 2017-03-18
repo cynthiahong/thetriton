@@ -1,5 +1,8 @@
 https://cynthiahong.github.io/thetriton/
 
+#About
+This is a redesign of a working prototype of The Triton, an online student-run newsource at UCSD. 
+
 #Installation
 1. Clone the repository
 2. Push to master 
