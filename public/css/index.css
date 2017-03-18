@@ -87,6 +87,7 @@
 
 #article-text {
 font-size: 18px;
+padding-top: 10px;
 }
 
 .active, .dot:hover {
@@ -302,7 +303,14 @@ ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, 
 }
 
 .subsectiontitle {
-  padding-bottom: 10px;
+  font-size: 10px;
+  line-height: 1;
+  background-color: #222222;
+  color: #fff;
+  padding: 3px 6px 4px;
+  vertical-align: top;
+  padding-top: 10px;
+
 }
 
 ul.section-title-home, {
