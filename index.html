@@ -11,10 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
-    <!-- for the slider -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
 </head>
 
 <body>
@@ -41,15 +37,6 @@
                             <input type="submit" value="" class="search-submit">
                             <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
                         </form>
-                        <!--  <div id="weather"> </div>
-                        <form class="navbar-form" action="search.html">
-                            <div class="input-group add-on">
-                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                                <a href="search.html"><div class="input-group-btn">
-                                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button> </a>
-                                </div>
-                            </div>
-                        </form>-->
                     </div>
                 </div>
             </div>
@@ -93,9 +80,9 @@
                 <li class="dropdown">
                     <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
                     <div class="dropdown-content collapse">
-                      <a href="#">LISTS</a>
-                      <a href="#">SATIRE</a>
-                      <a href="#">OTHER</a>
+                        <a href="#">LISTS</a>
+                        <a href="#">SATIRE</a>
+                        <a href="#">OTHER</a>
                     </div>
                 </li>
             </ul>
@@ -103,111 +90,198 @@
     </nav>
 
 
-    <!-- Mobile Navigation -->
-    <div id="navigation2">
-        <div class="blue-header">
-            <a href="index.html" class="whitetext">The Triton </a>
-        </div>
-        <div id="menu-toggle"></div>
-        <ul id="menu">
-            <li><a href="news.html">NEWS</a>
-                <div align="center">
-                    <div class="line"></div>
+    <!-- mobile navigation -->
+    <div class="hamburger-container">
+        <nav class="nav">
+            <div class="theTriton">
+                <a href="index.html" class="whitetext">The Triton </a>
+            </div>
+            <ul class="hamburger">
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+            </ul>
+            <ul id="menu">
+                <div class="scroll">
+                    <li id="mobilenav_section-title"><a href="news.html">NEWS</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="campus.html">CAMPUS NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">UC NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FEATURE</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="#">OPINION</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">EDITORIAL</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LETTER TO EDITOR</a></li>
+                        <li id="mobilenav_subsection"><a href="#">SUBMISSIONS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="#">A&E</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#"> THEATRE & DANCE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FILM</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LITERATURE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">MUSIC</a></li>
+                        <li id="mobilenav_subsection"><a href="#">VISUAL ARTS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="#">STUDENT LIFE</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">LISTS </a></li>
+                        <li id="mobilenav_subsection"><a href="#">SATIRE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">OTHER</a></li>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
                 </div>
-                <li class="half"><a href="campus.html">CAMPUS NEWS</a></li>
-                <li class="half"><a href="#">UC NEWS</a></li>
-            </li>
-            <li><a href="#">OPINION</a>
-                <div align="center">
-                    <div class="line"></div>
-                </div>
-                <li class="half"><a href="#">EDITORIAL</a></li>
-                <li class="half"><a href="#">SUBMISSION</a></li>
-            </li>
-            <li><a href="#">A&E</a>
-                <div align="center">
-                    <div class="line"></div>
-                </div>
-                <li class="half"><a href="#"> DANCE</a></li>
-                <li class="half"><a href="#">LITERATURE</a></li>
-            </li>
-            <li><a href="#">STUDENT LIFE</a>
-                <div align="center">
-                    <div class="line"></div>
-                </div>
-                <li class="half"><a href="#"> SATIRE </a></li>
-                <li class="half"><a href="#">FOOD REVIEWS</a></li>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-        </ul>
+            </ul>
     </div>
     </nav>
 
 
+<br>
+    <div class="slider">
+      <div class="slide_viewer">
+        <div class="slide_group">
+          <div class="slide">
+            <img src="https://i1.wp.com/triton.news/wp-content/uploads/2017/03/unnamed-1.jpg" class="img-responsive">
+            <div class="slideshow-caption1">
+            <div class="text">
+                <h4 class="caption-mobile-text"> News | UC News </h4>
+                <h4 class="caption-mobile-text"> Napolitano nominates next UC Berkeley Chancellor </h4>
+                <p class="author-mobile"> Matthew Zamudio | Mar 13, 2017 </p>
+            </div>
+          </div>
+        </div>
+          <div class="slide">
+            <img src="https://i0.wp.com/triton.news/wp-content/uploads/2017/03/bf4f13b600314b4055d7ebacf1707b7d-1.jpg?zoom=2&resize=650%2C400" class="img-responsive">
+            <div class="slideshow-caption2">
+            <div class="text">
+                <h4 class="caption-mobile-text"> A&E | Visual Arts </h4>
+                <h4class="caption-mobile-text">  Tell Us How UC It: A Living Archive </h4>
+                <p class="author-mobile"> Ana Magallanes | Mar 13, 2017 </p>
+            </div>
+          </div>
+          </div>
+          <div class="slide">
+              <img src="https://i0.wp.com/triton.news/wp-content/uploads/2017/03/IMG_5606.jpg" class="img-responsive">
+              <div class="slideshow-caption3">
+              <div class="text">
+                  <h4 class="caption-mobile-text"> Opinion | Submission </h4>
+                  <h4 class="caption-mobile-text">  UCSD is Not a Polytechnic University </h4>
+                  <p class="author-mobile"> Ashley Awe | Mar 8, 2017 </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+              <img src="https://i2.wp.com/triton.news/wp-content/uploads/2017/03/Screen-Shot-2017-03-05-at-11.36.16-PM.png" class="img-responsive">
+              <div class="slideshow-caption4">
+              <div class="text">
+                  <h4 class="caption-mobile-text"> News | Campus </h4>
+                  <h4 class="caption-mobile-text">  Federal judge dismisses The Koala’s claim against UCSD </h4>
+                  <p class="author-mobile"> Gabriel Schneider | Mar 6, 2017 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End // .slider -->
 
+    <div class="slide_buttons">
+    </div>
+
+    <div class="directional_nav">
+      <div class="previous_btn" title="Previous">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66">
+          <g>
+            <g>
+              <path class="white" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+    			c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+              <path fill="white" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="next_btn" title="Next">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66">
+          <g>
+            <g>
+              <path fill="white" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+              <path fill="white" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div><!-- End // .directional_nav -->
+<!--
     <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/16422648_1315568128517630_5441239438586852194_o-1.jpg?zoom=2&resize=650%2C400" class="img-responsive" style="width:100%">
-        <div class="text">
-        <h4 class="subsectiontitle"> Opinion | Editorial </h4> 
-                <h4> Elevating Appearances Over Students </h4> 
+        <div class="mySlides ">
+            <img src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/16422648_1315568128517630_5441239438586852194_o-1.jpg?zoom=2&resize=650%2C400" class="img-responsive" style="width:100%">
+            <div class="text">
+                <h4 class="subsectiontitle"> Opinion | Editorial </h4>
+                <h4> Elevating Appearances Over Students </h4>
                 <p class="author"> By The Triton Editorial Board | Feb 23, 2017 </p>
+            </div>
         </div>
-      </div>
 
-      <div class="mySlides fade">
-        <img class="img-responsive" style="width:100%" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1481.jpg?zoom=2&resize=650%2C400">
-        <div class="text">
-            <h4 class="subsectiontitle"> Opinion | Editorial </h4> 
-            <h4> The Huge Impact of HDH </h4> 
-            <p class="author">Jorder Packer | Feb 22, 2017</p>
+        <div class="mySlides ">
+            <img class="img-responsive" style="width:100%" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1481.jpg?zoom=2&resize=650%2C400">
+            <div class="text">
+                <h4 class="subsectiontitle"> Opinion | Editorial </h4>
+                <h4> The Huge Impact of HDH </h4>
+                <p class="author">Jorder Packer | Feb 22, 2017</p>
+            </div>
         </div>
-      </div>
 
-      <div class="mySlides fade">
-        <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/04/aslogo-1-1.jpg?zoom=2&resize=650%2C400" style="width:100%">
-        <div class="text">
-             <h4 class="subsectiontitle"> News | Campus </h4>
-                    <h4>
+        <div class="mySlides ">
+            <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/04/aslogo-1-1.jpg?zoom=2&resize=650%2C400" style="width:100%">
+            <div class="text">
+                <h4 class="subsectiontitle"> News | Campus </h4>
+                <h4>
                     New VP External Affairs and AVP Health and Wellness Appointed
                     </h4>
-                    <p class="author">
-                        Maggie Robak | Feb 22, 2017
-                    </p>
+                <p class="author">
+                    Maggie Robak | Feb 22, 2017
+                </p>
+            </div>
         </div>
-      </div>
 
-<div class="mySlides fade">
-        <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1714.jpg?zoom=2&resize=650%2C400" style="width:100%">
-        <div class="text">
-            <h4 class="subsectiontitle pad-top"> A&E | Literature </h4>
-                    <h4>
+        <div class="mySlides">
+            <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/IMG_1714.jpg?zoom=2&resize=650%2C400" style="width:100%">
+            <div class="text">
+                <h4 class="subsectiontitle pad-top"> A&E | Literature </h4>
+                <h4>
                     The Feminist Bookstand: The Table Reshaping The Culture Of The UCSD Bookstore
                 </h4>
-                    <p class="author">
-                        Amarachi Metu | Feb 16, 2017
-                    </p>
+                <p class="author">
+                    Amarachi Metu | Feb 16, 2017
+                </p>
+            </div>
         </div>
-      </div>
 
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
 
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+-->
 
 
-
-    <!-- the Latest section for Home Page 
+    <!-- the Latest section for Home Page
     <div class="container">
         <h2 class="section_name"> THE LATEST </h2>
         <div class="row">
@@ -274,6 +348,7 @@
 
 -->
     <div class="container">
+      <hr>
         <!-- section with 4 articles -->
         <h2 class="section_name"> <a href="news.html">NEWS </a></h2>
         <div class="row">

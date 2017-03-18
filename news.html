@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -9,87 +8,100 @@
     <title>The Triton</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
+    <!-- for the slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
 </head>
 
 <body>
-    <!-- header bar for desktop-->
-    <nav id="navigation1">
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <!-- Clears the float for cs -->
-                    <div class="clearfix visible-xs">
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div id="weather"> </div>
-                        <p id="clock"></p>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="index.html">
-                            <div class="theTriton"> The Triton </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <!--  <div id="weather"> </div> -->
-                        <form class="navbar-form" action="search.html">
-                            <div class="input-group add-on">
-                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                                <a href="search.html"><div class="input-group-btn">
-                                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button> </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
-      </nav>
 
-             <!-- navigation for desktop -->
-<nav id = "navigation">
-        <!-- sections in the navigation bar -->
-        <ul class="navi-section">
-<!-- add logo here for navi scroll
-            <img src =""></img> -->
-    <li class="dropdown">
-        <a href="news.html" class="navi-section2">NEWS</a>
-        <div class="dropdown-content collapse" >
-            <a href="campus.html">CAMPUS NEWS</a>
-            <a href="#">UC NEWS</a>
-            <a href="#">FEATURE</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="opinions.html" class="navi-section2">OPINION</a>
-        <div class="dropdown-content collapse">
-            <a href="#">EDITORIAL</a>
-            <a style="text-align: left" href="#">LETTER TO EDITOR</a>
-            <a href="#">SUBMISSIONS</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="a&e.html" class="navi-section2">A&E</a>
-        <div class="dropdown-content collapse">
-            <a style="text-align: left" href="#">THEATRE & DANCE</a>
-            <a href="#">FILM</a>
-            <a href="#">LITERATURE</a>
-            <a href="#">MUSIC</a>
-            <a href="#">VISUAL ARTS</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
-        <div class="dropdown-content collapse">
-            <a href="#">LISTS</a>
-            <a href="#">SATIRE</a>
-            <a href="#">OTHER</a>
-        </div>
-    </li>
-        </ul>
-</nav>
+  <!-- header bar for desktop-->
+  <nav id="navigation1">
+      <header id="header">
+          <div class="container">
+              <div class="row">
+                  <!-- Clears the float for cs -->
+                  <div class="clearfix visible-xs">
+                  </div>
+                  <div class="col-md-3 col-xs-12">
+                      <div id="weather"> </div>
+                      <p id="clock"></p>
+                  </div>
+                  <div class="col-md-6">
+                      <a href="index.html">
+                          <div class="theTriton"> The Triton </div>
+                      </a>
+                  </div>
+                  <div class="col-md-3">
+                      <form action="search.html" role="search" class="search-form">
+                          <input type="submit" value="" class="search-submit">
+                          <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
+                      </form>
+                      <!--  <div id="weather"> </div>
+                      <form class="navbar-form" action="search.html">
+                          <div class="input-group add-on">
+                              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                              <a href="search.html"><div class="input-group-btn">
+                                  <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button> </a>
+                              </div>
+                          </div>
+                      </form>-->
+                  </div>
+              </div>
+          </div>
+      </header>
+  </nav>
+
+      <div class="nav-wrapper-desktop">
+          <!-- navigation for desktop -->
+          <nav id="navigation">
+              <!-- sections in the navigation bar -->
+              <ul class="navi-section">
+                  <!-- add logo here for navi scroll -->
+                  <a href="index.html"><img src="images/tritonlogo.svg" class="tritonlogo"></img>
+                  </a>
+
+                  <li class="dropdown">
+                      <a href="news.html" class="navi-section2">NEWS</a>
+                      <div class="dropdown-content collapse">
+                          <a href="campus.html">CAMPUS NEWS</a>
+                          <a href="#">UC NEWS</a>
+                          <a href="#">FEATURE</a>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <a href="opinions.html" class="navi-section2">OPINION</a>
+                      <div class="dropdown-content collapse">
+                          <a href="#">EDITORIAL</a>
+                          <a style="text-align: left" href="#">LETTER TO EDITOR</a>
+                          <a href="#">SUBMISSIONS</a>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <a href="a&e.html" class="navi-section2">A&E</a>
+                      <div class="dropdown-content collapse">
+                          <a style="text-align: left" href="#">THEATRE & DANCE</a>
+                          <a href="#">FILM</a>
+                          <a href="#">LITERATURE</a>
+                          <a href="#">MUSIC</a>
+                          <a href="#">VISUAL ARTS</a>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
+                      <div class="dropdown-content collapse">
+                        <a href="#">LISTS</a>
+                        <a href="#">SATIRE</a>
+                        <a href="#">OTHER</a>
+                      </div>
+                  </li>
+              </ul>
+      </div>
+      </nav>
 
 
 
@@ -140,7 +152,7 @@
     </ul>
 
     <h2 class="sectionhome"> NEWS</h2>
-   
+
 <div class="sectionline"> </div>
 
 
@@ -300,60 +312,60 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
-
-</div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </body>
 
 
 
 
 
-<!-- footer -->
 
-<body>
-<div class="container">
-<div class="footerline"> </div>
-    <div class="content">
-    </div>
-    <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="container2">
-                    <div class="col-sm-3">
-                        <h5><a href="aboutus.html"> ABOUT </a></h5>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5><a href="contactus.html">CONTACT US</a></h5>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5><a href="makeasubmission.html">SUBMIT WORK</a></h5>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5><a href="jobs.html">JOBS</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3"> </div>
-                <div class="col-sm-5"></div>
-                <div class="col-sm-4">
-                    <div class="socialbtns">
-                        <li><a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-lg fa-instagram"></i></a></li>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="footer-copyright">
-        <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
-            the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
-    </div>
-</div>
-</body>
-</div>
 
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+  <div class="footerline"> </div>
+  <!-- footer -->
 
-</html>
+  <body>
+      <div class="content">
+      </div>
+      <footer id="myFooter">
+          <div class="container">
+              <div class="row">
+                  <div class="container2">
+                      <div class="col-sm-3">
+                          <h5><a href="aboutus.html"> ABOUT </a></h5>
+                      </div>
+                      <div class="col-sm-3">
+                          <h5><a href="contactus.html">CONTACT US</a></h5>
+                      </div>
+                      <div class="col-sm-3">
+                          <h5><a href="makeasubmission.html">SUBMIT A STORY</a></h5>
+                      </div>
+                      <div class="col-sm-3">
+                          <h5><a href="jobs.html">JOBS</a></h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-3"> </div>
+                  <div class="col-sm-5"></div>
+                  <div class="col-sm-4">
+                      <div class="socialbtns">
+                          <li><a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
+                          <li><a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-lg fa-instagram"></i></a></li>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div class="footer-copyright">
+          <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
+              the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
+      </div>
+      </div>
+  </body>
+
+  </div>
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+  </html>

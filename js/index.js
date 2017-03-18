@@ -53,38 +53,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000);
+  console.log(slideIndex);
 } */
 
-
-
-/* var slideIndex = 1;
-showSlides(slideIndex); */
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-    console.log(slideIndex);
-}
 
 
 /* makes the Triton logo appear when scrolled down on desktop */
@@ -160,70 +131,46 @@ $(document).ready(function(){
 
 });
 
+/* hamburger menu */
 
+$(document).ready(function(){
 
+	//toggle menu
+	$('.hamburger').click(function(){
+		$('#menu').slideToggle();
+	});
 
-$.fn.extend({
+	//to fix issue that toggle adds style(hides) to nav
+	$(window).resize(function(){
+		if(window.innerWidth > 1024) {
+			$('#menu').removeAttr('style');
+		}
+	});
 
-  // Define the threeBarToggle function by extending the jQuery object
-  threeBarToggle: function(options){
+	//icon animation
+	var topBar = $('.hamburger li:nth-child(1)'),
+		middleBar = $('.hamburger li:nth-child(2)'),
+		bottomBar = $('.hamburger li:nth-child(3)');
 
-    // Set the default options
-    var defaults = {
-      color: 'black',
-      width: 30,
-      height: 25,
-      speed: 400,
-      animate: true
-    }
-    var options = $.extend(defaults, options);
+	$('.hamburger').on('click', function() {
+		if (middleBar.hasClass('rot-45deg')) {
+			topBar.removeClass('rot45deg');
+			middleBar.removeClass('rot-45deg');
+			bottomBar.removeClass('hidden');
+		} else {
+			bottomBar.addClass('hidden');
+			topBar.addClass('rot45deg');
+			middleBar.addClass('rot-45deg');
+		}
+	});
 
-    return this.each(function(){
-
-      $(this).empty().css({'width': options.width, 'height': options.height, 'background': 'transparent'});
-      $(this).addClass('tb-menu-toggle');
-      $(this).prepend('<i></i><i></i><i></i>').on('click', function(event) {
-        event.preventDefault();
-        $(this).toggleClass('tb-active-toggle');
-        if (options.animate) { $(this).toggleClass('tb-animate-toggle'); }
-        $('.tb-mobile-menu').slideToggle(options.speed);
-      });
-      $(this).children().css('background', options.color);
-    });
-  },
-
-  // Define the accordionMenu() function that adds the sliding functionality
-  accordionMenu: function(options){
-
-    // Set the default options
-    var defaults = {
-      speed: 400
-    }
-    var options =  $.extend(defaults, options);
-
-    return this.each(function(){
-
-      $(this).addClass('tb-mobile-menu');
-      var menuItems = $(this).children('li');
-      menuItems.find('.sub-menu').parent().addClass('tb-parent');
-      $('.tb-parent ul').hide();
-      $('.tb-parent > a').on('click', function(event) {
-        event.stopPropagation();
-        event.preventDefault();
-        $(this).siblings().slideToggle(options.speed);
-      });
-
-    });
-  }
 });
 
-// Convert any element into a three bar toggle
-// Optional arguments are 'speed' (number in ms, 'slow' or 'fast') and 'animation' (true or false) to disable the animation on the toggle
-$('#menu-toggle').threeBarToggle({color: 'white', width: 30, height: 25});
 
-// Make any nested ul-based menu mobile
-// Optional arguments are 'speed' and 'accordion' (true or false) to disable the behavior of closing other sub
-$('#menu').accordionMenu();
+
+
+
+
 
 
 /* share button appears when reading the article and then hides completely on mobile */
@@ -254,4 +201,97 @@ $(document).ready(function() {
   else{
     $('#socialarea').hide();
   }
+});
+
+
+
+
+$('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+
+    advance();
+
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 4000);
+  }
+
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+
+  advance();
 });
