@@ -726,6 +726,9 @@ i.fa.fa-lg.fa-instagram:hover {
         overflow: auto;
         max-height: 667px;
     }
+    .padding{
+      padding: 5px;
+    }
     ul#menu li a {
         width: 100%;
         display: block;
@@ -736,13 +739,12 @@ i.fa.fa-lg.fa-instagram:hover {
         transition: background 0.2s;
         text-decoration: none;
         text-align: left;
+        cursor: pointer;
     }
     ul#menu li {
         overflow: auto;
     }
-    ul#menu a:hover {
-        background-color: #4b85a2;
-    }
+
     @media screen and (min-width: 2000px) {
         .hamburger-container {
             display: none;
@@ -977,7 +979,7 @@ p, li {
 /* hides the navigation bar on desktop */
 
 @media screen and (min-width: 768px) {
-    .handle, .remove, .back-to-top, .nav, .tritonlogo, .nav-wrapper, .scroll {
+    .handle, .remove, .back-to-top, .nav, .tritonlogo, .nav-wrapper, .scroll, .padding {
         display: none;
     }
     .theTriton {

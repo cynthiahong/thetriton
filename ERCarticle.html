@@ -11,10 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
-    <!-- for the slider -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 </head>
 
 <body>
@@ -37,105 +33,117 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                      <form action="search.html" role="search" class="search-form">
-                          <input type="submit" value="" class="search-submit">
-                          <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
-                      </form>
-                        <!--  <div id="weather"> </div>
-                        <form class="navbar-form" action="search.html">
-                            <div class="input-group add-on">
-                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                                <a href="search.html"><div class="input-group-btn">
-                                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button> </a>
-                                </div>
-                            </div>
-                        </form>-->
+                        <form action="search.html" role="search" class="search-form">
+                            <input type="submit" value="" class="search-submit">
+                            <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
-      </nav>
+    </nav>
+    <div class="nav-wrapper-desktop">
+        <!-- navigation for desktop -->
+        <nav id="navigation">
+            <!-- sections in the navigation bar -->
+            <ul class="navi-section">
+                <!-- add logo here for navi scroll -->
+                <a href="index.html"><img src="images/tritonlogo.svg" class="tritonlogo"></img>
+                </a>
 
-     <!-- navigation for desktop -->
-<nav id = "navigation">
-        <!-- sections in the navigation bar -->
-        <ul class="navi-section">
-<!-- add logo here for navi scroll
-            <img src =""></img> -->
-    <li class="dropdown">
-        <a href="news.html" class="navi-section2">NEWS</a>
-        <div class="dropdown-content collapse" >
-            <a href="campus.html">CAMPUS NEWS</a>
-            <a href="#">UC NEWS</a>
-            <a href="#">FEATURE</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="opinions.html" class="navi-section2">OPINION</a>
-        <div class="dropdown-content collapse">
-            <a href="#">EDITORIAL</a>
-            <a style="text-align: left" href="#">LETTER TO EDITOR</a>
-            <a href="#">SUBMISSIONS</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="a&e.html" class="navi-section2">A&E</a>
-        <div class="dropdown-content collapse">
-            <a style="text-align: left" href="#">THEATRE & DANCE</a>
-            <a href="#">FILM</a>
-            <a href="#">LITERATURE</a>
-            <a href="#">MUSIC</a>
-            <a href="#">VISUAL ARTS</a>
-        </div>
-    </li>
-    <li class="dropdown">
-        <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
-        <div class="dropdown-content collapse">
-            <a href="#">LISTS</a>
-            <a href="#">SATIRE</a>
-            <a href="#">OTHER</a>
-        </div>
-    </li>
-        </ul>
-</nav>
+                <li class="dropdown">
+                    <a href="news.html" class="navi-section2">NEWS</a>
+                    <div class="dropdown-content collapse">
+                        <a href="campus.html">CAMPUS NEWS</a>
+                        <a href="#">UC NEWS</a>
+                        <a href="#">FEATURE</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="opinions.html" class="navi-section2">OPINION</a>
+                    <div class="dropdown-content collapse">
+                        <a href="#">EDITORIAL</a>
+                        <a style="text-align: left" href="#">LETTER TO EDITOR</a>
+                        <a href="#">SUBMISSIONS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="a&e.html" class="navi-section2">A&E</a>
+                    <div class="dropdown-content collapse">
+                        <a style="text-align: left" href="#">THEATRE & DANCE</a>
+                        <a href="#">FILM</a>
+                        <a href="#">LITERATURE</a>
+                        <a href="#">MUSIC</a>
+                        <a href="#">VISUAL ARTS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
+                    <div class="dropdown-content collapse">
+                        <a href="#">LISTS</a>
+                        <a href="#">SATIRE</a>
+                        <a href="#">OTHER</a>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    </nav>
 
 
-
-<!-- Mobile Navigation -->
-
-<div id ="navigation2">
-  <div class="blue-header">
-    The Triton </div>
-    <div id="menu-toggle">
-  </div>
-    <ul id="menu">
-      <li><a href="news.html">NEWS</a>
-        <ul class="sub-menu">
-          <li><a href="#">CAMPUS NEWS</a></li>
-          <li><a href="#">UC NEWS</a></li>
-        </ul>
-      </li>
-      <li><a href="#">OPINION</a>
-        <ul class="sub-menu">
-          <li><a href="#">EDITORIAL</a></li>
-          <li><a href="#">SUBMISSION</a></li>
-        </ul>
-      </li>
-      <li><a href="#">A&E</a>
-        <ul class="sub-menu">
-          <li><a href="#"> DANCE</a></li>
-          <li><a href="#">LITERATURE</a></li>
-        </ul>
-      </li>
-      <li><a href="#">STUDENT LIFE</a>
-        <ul class="sub-menu">
-          <li><a href="#"> SATIRE </a></li>
-          <li><a href="#">FOOD REVIEW</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- mobile navigation -->
+    <div class="hamburger-container">
+        <nav class="nav">
+            <div class="theTriton">
+                <a href="index.html" class="whitetext">The Triton </a>
+            </div>
+            <ul class="hamburger">
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+            </ul>
+            <ul id="menu">
+                <div class="scroll">
+                    <li id="mobilenav_section-title"><a href="news.html">NEWS</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="campus.html">CAMPUS NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">UC NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FEATURE</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="opinions.html">OPINION</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">EDITORIAL</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LETTER TO EDITOR</a></li>
+                        <li id="mobilenav_subsection"><a href="#">SUBMISSIONS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="a&e.html">A&E</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#"> THEATRE & DANCE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FILM</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LITERATURE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">MUSIC</a></li>
+                        <li id="mobilenav_subsection"><a href="#">VISUAL ARTS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="studentlife.html">STUDENT LIFE</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">LISTS </a></li>
+                        <li id="mobilenav_subsection"><a href="#">SATIRE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">OTHER</a></li>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </div>
+            </ul>
+    </div>
+    </nav>
 
 <!-- JavaScript SDK for Facebook page plugin -->
 <div id="fb-root"></div>
@@ -217,7 +225,7 @@ Scott said it has been a standard practice for over 20 years for SCERC to take a
 According to DiBenedetto, between 2011-12 and last year, the council decided not to do an overnight fall retreat. This led to problems where council members were not able to learn everything they needed. Last year was the first year SCERC brought back the overnight retreat of one night, DiBenedetto said.
 <br>
 <br>
-
+<div id="end"></div>
 After feedback from last year’s overnight retreat, DiBenedetto said SCERC decided to bring back the two-night fall retreat this year.
 <br>
 <br>
@@ -247,45 +255,11 @@ Travel time from UCSD to Julian is about an hour and a half each way.
  <br>
 
 
-<!--
-<div id="buttons">
-  <div class="facebook button">
-    <i class="icon">
-      <i class="fa fa-facebook"></i>
-  </i>
-  <div class="slide">
-    <p class="share">
-      SHARE
-    </p>
-  </div>
-  </div>
-  <div class="twitter button">
-    <i class="icon">
-      <i class="fa fa-twitter"></i>
-  </i>
-  <div class="slide">
-    <p class="share">
-      TWEET
-    </p>
-  </div>
-
-  <div class="google button">
-  <i class="icon">
-    <i class="fa fa-google">
-  </i>
-</i>
-<div class="slide">
-  <p class="share">
-    google+
-  </p>
-</div>
-  </div>
-</div> -->
 <div id="socialarea2">
 <ul id="sociallist">
 <li class="facebook_social2"> <a class="removepadding" target="_new"><i class="fa fa-facebook"></i> SHARE </a></li>
-<li class="twitter_social2"> <a class="removepadding" target="_new"><i class="fa fa-twitter"></i> TWEET </a></li>
-<li class="googleplus_social2"> <a target="_new"><i class="fa fa-google-plus"></i> SHARE  </a></li>
+<div class="padding"></div><li class="twitter_social2"> <a class="removepadding" target="_new"><i class="fa fa-twitter"></i> TWEET </a></li>
+<div class="padding"></div><li class="googleplus_social2"> <a target="_new"><i class="fa fa-google-plus"></i> SHARE  </a></li>
 </ul>
 </div>
 
@@ -317,6 +291,7 @@ Travel time from UCSD to Julian is about an hour and a half each way.
     <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/IMAG0136.jpg?resize=650%2C400" </img>
 
         <center>
+        </br>
             <h4> Nope, SSC Says They're Working Quite Well </h4>
             <p class="author">Student Sustainability Collective | Feb 2, 2017 </p>
         </center>
@@ -325,6 +300,7 @@ Travel time from UCSD to Julian is about an hour and a half each way.
     <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/01/IMAG0090-1.jpg?resize=650%2C400" </img>
 
         <center>
+        </br>
             <h4> Gianino: The 5.2 Million Dollar Question </h4>
             <p class="author"> Zack Gianino | Jan 11, 2017</p>
         </center>

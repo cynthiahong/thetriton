@@ -137,12 +137,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
-
-
-
 /* share button appears when reading the article and then hides completely on mobile */
 $(document).ready(function() {
 
