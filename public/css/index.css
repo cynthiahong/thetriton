@@ -586,6 +586,12 @@ section {
     padding-bottom: 5px;
 }
 
+.subsectionline {
+    height: .5px;
+    border-bottom: 2px solid black;
+    padding-top: 1px;
+}
+
 #subsection-title {
     padding-bottom: 5px !important;
     margin: 0 !important;
@@ -1291,7 +1297,7 @@ p, li {
 
 .form-group {
     box-sizing: border-box;
-    width: 250px;
+    width: 450px;
 }
 
 
