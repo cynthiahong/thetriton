@@ -175,8 +175,7 @@ padding-top: 10px;
 
 
 .text{
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 15px;
   top: 360px;
   left: 200px;
   color: white;
@@ -184,31 +183,27 @@ padding-top: 10px;
 
 .slideshow-caption1{
   opacity: 0.85;
-  width: 450px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption2{
   opacity: 0.85;
-  width: 320px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption3{
   opacity: 0.85;
-  width: 340px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption4{
   opacity: 0.85;
-  width: 500px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 
 
@@ -843,14 +838,16 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .directional_nav{
-      top:-120px;
+      top:-125px;
     }
 
     .caption-mobile-text{
-      font-size: 13px;
-      padding-bottom: 8px !important;
+      font-size: 11px;
     }
 
+    .caption-mobile-text-title{
+      font-size: 12px !important;
+    }
     .author-mobile{
       font-size: 12px;
     }
@@ -859,7 +856,7 @@ i.fa.fa-lg.fa-instagram:hover {
       padding-top: 5px;
     }
     /* hide stuff on mobile */
-    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop {
+    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop, .paragraph-hide {
         display: none;
     }
 
