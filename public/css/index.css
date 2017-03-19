@@ -295,7 +295,7 @@ h3 {
 
 h4 {
   margin: 0 !important;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-family: 'Source Sans Pro' sans-serif;
   font-weight: 600;
   font-size: 20px !important;
@@ -336,6 +336,8 @@ body {
     color: #6e6e6e;
     font-size: 14px;
     padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px !important;
 }
 
 p.sentence {
@@ -363,10 +365,9 @@ form.navbar-form {
 .subsectiontitle {
   font-size: 12px;
   font-weight: 400 !important;
-  margin-bottom: 7px;
   display: block;
-  text-align: left;
-  padding: 0px;
+  padding-top: 10px !important;
+  margin: 0 !important;
 
 }
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #srch-term {
