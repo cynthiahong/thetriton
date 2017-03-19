@@ -386,6 +386,9 @@ ul.section-title-home, {
     font-weight: lighter;
 }
 
+.img-responsive{
+    image-rendering: 
+}
 
 /* navi and dropdown menu */
 
@@ -570,6 +573,8 @@ a {
     font-weight: lighter;
 }
 
+.
+
 section {
     line-height: 1.5em;
     font-size: 0.9em;
@@ -644,7 +649,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 
 ul.breadcrumb li+li:before {
-    padding: 8px;
+    padding: 6px;
     color: black;
     content: "/\00a0";
 }
