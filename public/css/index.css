@@ -363,13 +363,30 @@ form.navbar-form {
 
 
 .subsectiontitle {
-  font-size: 12px;
-  font-weight: 400 !important;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 1px;
   display: block;
-  padding-top: 10px !important;
-  margin: 0 !important;
-
+  text-align: center;
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
 }
+
+
+.subsectiontitle-left {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  display: block;
+  text-align: left;
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
+}
+
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #srch-term {
     font-family: 'SourceSansPro', sans-serif !important;
     font-weight: lighter;
@@ -603,11 +620,16 @@ section {
     height: .5px;
     border-bottom: 2px solid black;
     padding-top: 1px;
+    font-weight: lighter;
+
+
 }
 
 #subsection-title {
     padding-bottom: 5px !important;
     margin: 0 !important;
+    font-weight: lighter;
+
 }
 
 h2 {
