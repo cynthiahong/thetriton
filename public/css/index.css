@@ -382,7 +382,7 @@ ul.section-title-home, {
 }
 
 .img-responsive{
-    image-rendering: 
+    image-rendering:
 }
 
 /* navi and dropdown menu */
@@ -766,7 +766,7 @@ i.fa.fa-lg.fa-instagram:hover {
       padding: 5px;
     }
 
-   
+
 
     ul#menu li a {
         width: 100%;
@@ -1344,7 +1344,7 @@ p, li {
 
 .pad-top {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 
