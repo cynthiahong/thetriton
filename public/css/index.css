@@ -374,7 +374,7 @@ form.navbar-form {
   padding: 0px;
 
 }
-ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #weather, #srch-term {
+ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #srch-term {
     font-family: 'SourceSansPro', sans-serif !important;
     font-weight: lighter;
   padding-bottom: 10px;

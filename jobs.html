@@ -145,6 +145,15 @@
     </div>
     </nav>
 
+    <!-- JavaScript SDK for Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
   </br>
 
@@ -237,7 +246,7 @@
                     <button type="button" id="submit" class="button">SUBMIT</button>
                 </div>
             </div>
-
+</form>
 
             <div class="col-sm-3">
                 <div class="fb-page" data-href="https://www.facebook.com/thetritonnews/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -246,21 +255,22 @@
 
             </div>
         </div>
+
 <hr>
+<div class="subscribe">
+    <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
+        <div class="description">
+            <p>Stay informed. </br>Subscribe to our email list.</p>
+        </div>
+        <div class="input2">
+            <input type="text" class="button" id="email2" name="email" placeholder="EMAIL">
+            <input type="submit" class="button" id="submit" value="SUBSCRIBE">
+        </div>
+    </form>
+</div>
 
-</body>
 
-            <div class="subscribe">
-                <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
-                    <div class="description">
-                        <p>Stay informed. </br>Subscribe to our email list.</p>
-                    </div>
-                    <div class="input2">
-                        <input type="text" class="button" id="email2" name="email" placeholder="EMAIL">
-                        <input type="submit" class="button" id="submit" value="SUBSCRIBE">
-                    </div>
-                </form>
-            </div>
+
 
             <!-- JavaScript files -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -312,7 +322,6 @@
         <div class="footer-copyright">
             <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
                 the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
-        </div>
         </div>
     </body>
 
