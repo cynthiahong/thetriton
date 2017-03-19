@@ -299,8 +299,12 @@ h3 {
 }
 
 h4 {
-    margin: 0 !important;
+  margin: 0 !important;
   padding-bottom: 5px;
+  font-family: 'Source Sans Pro' sans-serif;
+  font-weight: 600;
+  font-size: 20px !important;
+  line-height: 1.3em/31px;
 }
 
 html {
@@ -362,13 +366,13 @@ form.navbar-form {
 
 
 .subsectiontitle {
-  font-size: 10px;
-  line-height: 1;
-  background-color: #222222;
-  color: #fff;
-  padding: 3px 6px 4px;
-  vertical-align: top;
-  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 400 !important;
+  margin-bottom: 7px;
+  display: block;
+  text-align: left;
+  padding: 0px;
+
 }
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #weather, #srch-term {
     font-family: 'SourceSansPro', sans-serif !important;
@@ -397,8 +401,11 @@ li.navi-section2:hover {
 li a, .navi-section2 {
     display: inline-block;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 25px;
+    font-family: 'Source Sans Pro.' sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3em/25px;
 }
 
 li.dropdown {
@@ -467,6 +474,7 @@ h4.subsectiontitle {
     vertical-align: middle;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 400;
 }
 
 .contactus, .input-group {
@@ -1018,6 +1026,7 @@ p, li {
     }
     .border-right {
         border-right: 1px solid #eee;
+
     }
     #weather, #clock {
         margin: auto;
@@ -1062,6 +1071,9 @@ p, li {
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Source Sans Pro' sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 #weather i {
