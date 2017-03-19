@@ -133,7 +133,7 @@ padding-top: 10px;
 }
 .previous_btn {
   bottom: 0;
-  left: 100px;
+  left: 30px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -143,7 +143,7 @@ padding-top: 10px;
   bottom: 0;
   margin: auto;
   position: absolute;
-  right: 100px;
+  right: 20px;
   top: 0;
 }
 
@@ -175,8 +175,7 @@ padding-top: 10px;
 
 
 .text{
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 15px;
   top: 360px;
   left: 200px;
   color: white;
@@ -184,31 +183,27 @@ padding-top: 10px;
 
 .slideshow-caption1{
   opacity: 0.85;
-  width: 450px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption2{
   opacity: 0.85;
-  width: 320px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption3{
   opacity: 0.85;
-  width: 340px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 .slideshow-caption4{
   opacity: 0.85;
-  width: 500px;
   background-color: black;
   position: absolute;
-  top: 380px;
+  top: 355px;
 }
 
 
@@ -386,6 +381,9 @@ ul.section-title-home, {
     font-weight: lighter;
 }
 
+.img-responsive{
+    image-rendering: 
+}
 
 /* navi and dropdown menu */
 
@@ -574,6 +572,8 @@ h1 {
     font-weight: lighter;
 }
 
+.
+
 section {
     line-height: 1.5em;
     font-size: 0.9em;
@@ -649,7 +649,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 
 ul.breadcrumb li+li:before {
-    padding: 8px;
+    padding: 6px;
     color: black;
     content: "/\00a0";
 }
@@ -765,6 +765,9 @@ i.fa.fa-lg.fa-instagram:hover {
     .padding{
       padding: 5px;
     }
+
+   
+
     ul#menu li a {
         width: 100%;
         display: block;
@@ -840,14 +843,16 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .directional_nav{
-      top:-120px;
+      top:-125px;
     }
 
     .caption-mobile-text{
-      font-size: 13px;
-      padding-bottom: 8px !important;
+      font-size: 11px;
     }
 
+    .caption-mobile-text-title{
+      font-size: 12px !important;
+    }
     .author-mobile{
       font-size: 12px;
     }
@@ -856,7 +861,7 @@ i.fa.fa-lg.fa-instagram:hover {
       padding-top: 5px;
     }
     /* hide stuff on mobile */
-    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop {
+    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop, .paragraph-hide {
         display: none;
     }
 
