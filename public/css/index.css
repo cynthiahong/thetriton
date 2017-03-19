@@ -755,7 +755,7 @@ i.fa.fa-lg.fa-instagram:hover {
     ul#menu {
         display: none;
         padding: 0;
-        background-color: #191919;
+        background-color: #e4e2e0;
         opacity: 70%;
     }
     .scroll {
@@ -771,8 +771,8 @@ i.fa.fa-lg.fa-instagram:hover {
     ul#menu li a {
         width: 100%;
         display: block;
-        background-color: #191919;
-        color: white;
+        background-color: #e4e2e0;
+        color: black;
         font-size: 1.1em;
         padding: 20px;
         transition: background 0.2s;
@@ -1484,7 +1484,6 @@ input2:focus {
     font-size: 20px;
     padding: 0;
     width: 100%;
-    color: white;
 }
 
 #mobilenav_section {
@@ -1679,6 +1678,6 @@ li a .googleplus_social2 {
 
 .line {
     width: 90%;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
 }
