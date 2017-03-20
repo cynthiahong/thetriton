@@ -870,14 +870,14 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .caption-mobile-text{
-      font-size: 11px;
+      font-size: 11px !important;
     }
 
     .caption-mobile-text-title{
       font-size: 12px !important;
     }
     .author-mobile{
-      font-size: 12px;
+      font-size: 11px !important;
     }
 
     .subsectiontitle{
@@ -1426,6 +1426,10 @@ p, li {
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
+    }
+
+    .subsectiontitle, h4, p.author-left, .author-mobile, p.author{
+      text-align: center;
     }
 }
 
