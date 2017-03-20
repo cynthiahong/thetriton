@@ -716,6 +716,7 @@ ul.breadcrumb li a:hover {
 .socialbtns, .socialbtns ul, .socialbtns li {
     margin: 0;
     padding: 10px;
+    text-align: center;
 }
 
 .socialbtns li {
@@ -947,6 +948,10 @@ i.fa.fa-lg.fa-instagram:hover {
       top: 120px;
     }
 
+}
+
+h4.caption-mobile-text{
+  font-size: 16px !important;
 }
 
 a {
@@ -1318,6 +1323,7 @@ p, li {
     font-weight: 300;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    font-family: 'SourceSansPro', sans-serif; 
 }
 
 #weather ul {

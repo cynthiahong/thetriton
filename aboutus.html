@@ -147,13 +147,16 @@
 
     <!-- JavaScript SDK for Facebook page plugin -->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
 
@@ -175,11 +178,11 @@
                 Created shortly before the defunding of student media at UCSD, The Triton is the school’s sole fully independent student newspaper. In an era where respected journalists are reprimanded for seeking out the truth, we believe it’s more important than ever
                 to focus on local, laser focused journalism.
                 </br>
-                </p>
-                <img src="sun_god_statue.png" width="100%"></img>
-                <p> <em> Photo courtesy of Daniel Lee</em> </p>
-                <hr>
-                <h3>2016-2017 Senior Editorial Board</h3>
+            </p>
+            <img src="sun_god_statue.png" width="100%"></img>
+            <p> <em> Photo courtesy of Daniel Lee</em> </p>
+            <hr>
+            <h3>2016-2017 Senior Editorial Board</h3>
             </p>
             <p><u><a href="mailto:editor@triton.news">Gabriel Schneider</a></u> | <strong>Editor in Chief</strong><br>
                 <u><a href="mailto:managing@triton.news">Aleena Karamally</a></u> |&nbsp;<strong>Managing Editor</strong><br>
@@ -323,9 +326,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3"> </div>
-                <div class="col-sm-5"></div>
-                <div class="col-sm-4">
+                <div class="col-sm-12">
                     <div class="socialbtns">
                         <li><a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
