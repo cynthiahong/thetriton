@@ -354,14 +354,37 @@ form.navbar-form {
 }
 
 
+<<<<<<< HEAD
 .sub_title {
   font-size: 12px;
   font-weight: 400 !important;
+=======
+.subsectiontitle {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+>>>>>>> origin/master
   display: block;
-  padding-top: 10px !important;
-  margin: 0 !important;
-
+  text-align: center;
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
 }
+
+
+.subsectiontitle-left {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  display: block;
+  text-align: left;
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
+}
+
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #srch-term {
     font-family: 'SourceSansPro', sans-serif !important;
   padding-bottom: 10px;
@@ -648,11 +671,16 @@ section {
     height: .5px;
     border-bottom: 2px solid black;
     padding-top: 1px;
+    font-weight: lighter;
+
+
 }
 
 #subsection-title {
     padding-bottom: 5px !important;
     margin: 0 !important;
+    font-weight: lighter;
+
 }
 
 h2 {
@@ -739,6 +767,7 @@ ul.breadcrumb li a:hover {
 .socialbtns, .socialbtns ul, .socialbtns li {
     margin: 0;
     padding: 10px;
+    text-align: center;
 }
 
 .socialbtns li {
@@ -893,14 +922,14 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .caption-mobile-text{
-      font-size: 11px;
+      font-size: 11px !important;
     }
 
     .caption-mobile-text-title{
       font-size: 12px !important;
     }
     .author-mobile{
-      font-size: 12px;
+      font-size: 11px !important;
     }
 
     .subsectiontitle{
@@ -970,6 +999,10 @@ i.fa.fa-lg.fa-instagram:hover {
       top: 120px;
     }
 
+}
+
+h4.caption-mobile-text{
+  font-size: 16px !important;
 }
 
 a {
@@ -1341,6 +1374,7 @@ p, li {
     font-weight: 300;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    font-family: 'SourceSansPro', sans-serif;
 }
 
 #weather ul {
@@ -1449,6 +1483,10 @@ p, li {
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
+    }
+
+    .subsectiontitle, h4, p.author-left, .author-mobile, p.author, .subsectiontitle-left{
+      text-align: center;
     }
 }
 
