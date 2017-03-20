@@ -45,6 +45,8 @@ font-size: 17px;
 
 #author-name {
     font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -582,6 +584,12 @@ li.dropdown {
 #container {
     min-height: 300%;
     padding: 30px !important;
+}
+
+.article-title{
+  font-size: 30px;
+font-family: 'SourceSansPro' sans-serif;
+font-weight: 600;
 }
 
 .sectionhome{
