@@ -295,7 +295,7 @@ h3 {
 
 h4 {
   margin: 0 !important;
-  padding-bottom: 10px;
+  padding-bottom: 0px !important;
   font-family: 'Source Sans Pro' sans-serif;
   font-weight: 600;
   font-size: 20px !important;
@@ -356,15 +356,14 @@ form.navbar-form {
 
 
 .subsectiontitle {
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 1px;
-  display: block;
-  text-align: center;
-  padding: 0px;
-  color: #6e6e6e;
+  font-size: 13px;
+  color: #333;
   font-family: "SourceSansPro", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
+  line-height: 1.3em/17px;
+  text-transform: uppercase;
+  margin: 0px !important;
+  padding-bottom: 5px !important;
 }
 
 
@@ -917,7 +916,14 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .caption-mobile-text{
-      font-size: 11px !important;
+   
+      font-size: 14px;
+
+
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
     }
 
     .caption-mobile-text-title{
