@@ -490,11 +490,11 @@ li.dropdown {
 .author {
     color: #333;
     font-family: "SourceSansPro", sans-serif;
-    font-size: 14px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 5px;
     margin: 0px !important;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3em/17px;
     }
 
@@ -502,7 +502,7 @@ li.dropdown {
 .paragraph {
   font-family: 'SourceSansPro' sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5em/26px;
 }
 
@@ -510,7 +510,7 @@ li.dropdown {
 .paragraph-hide {
   font-family: 'SourceSansPro' sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5em/26px;
 }
 
