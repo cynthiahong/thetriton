@@ -177,7 +177,10 @@ padding-top: 10px;
 
 
 .text{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   top: 360px;
   left: 200px;
   color: white;
@@ -359,7 +362,7 @@ form.navbar-form {
 
 .subsectiontitle {
   font-size: 12px;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   padding-top: 5px;
   padding-left: 8px;
@@ -378,7 +381,7 @@ form.navbar-form {
 
 .subsectiontitle-left {
   font-size: 10px;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   padding-top: 5px;
   padding-left: 10px;
@@ -482,14 +485,14 @@ li.dropdown {
 
 .text-center {
     text-align: center;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-weight: lighter;
     font-size: 14px;
 }
 
 .author {
     color: #333;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-size: 15px;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -500,7 +503,7 @@ li.dropdown {
 
 
 .paragraph {
-  font-family: 'SourceSansPro' sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.5em/26px;
@@ -508,7 +511,7 @@ li.dropdown {
 
 
 .paragraph-hide {
-  font-family: 'SourceSansPro' sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.5em/26px;
@@ -518,7 +521,7 @@ li.dropdown {
     color: #6e6e6e;
     font-size: 14px;
     text-align: left;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-weight: lighter;
 }
 
@@ -641,7 +644,7 @@ margin-bottom: 5px;
 .little-sections{
 font-size: 22px;
 text-align: center;
-font-family: 'SourceSansPro' sans-serif;
+font-family: 'SourceSansPro', sans-serif;
 font-weight: 500;
 line-height: 1.3em/25px !important;
 margin: 0px !important;
@@ -957,8 +960,8 @@ i.fa.fa-lg.fa-instagram:hover {
       font-size: 0.75em !important;
       padding: 0px;
       color: #6e6e6e;
-      font-family: "SourceSansPro", sans-serif;
-      font-weight: lighter;
+      font-family: 'SourceSansPro', sans-serif;
+      font-weight: 500;
     }
 
     .caption-mobile-text-title{
@@ -1034,13 +1037,13 @@ i.fa.fa-lg.fa-instagram:hover {
 
 }
 
-/* h4.caption-mobile-text{
+h4.caption-mobile-text{
   font-size: 16px !important;
   padding: 0px;
   color: #6e6e6e;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: lighter;
-}*/
+}
 
 
 a {
@@ -1198,7 +1201,7 @@ p, li {
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Source Sans Pro' sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
@@ -1563,7 +1566,6 @@ p, li {
 
 #submit {
     width: 40%;
-    height: 45px;
     background: #1e73be;
     font-family: 'SourceSansPro', sans-serif;
     font-weight: bold;
@@ -1625,6 +1627,7 @@ input2:focus {
 
 a.whitetext {
     color: white;
+    padding-left: 10px;
 }
 
 
