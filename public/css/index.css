@@ -177,7 +177,7 @@ padding-top: 10px;
 
 
 .text{
-  padding: 15px;
+  padding-top: 5px;
   top: 360px;
   left: 200px;
   color: white;
@@ -298,10 +298,10 @@ h3 {
 h4 {
   margin: 0 !important;
   padding-bottom: 0px !important;
-  font-family: 'Source Sans Pro' sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 20px !important;
-  line-height: 1.3em/31px;
+  line-height: 1.2em;
 }
 
 html {
@@ -358,7 +358,7 @@ form.navbar-form {
 
 
 .subsectiontitle {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "SourceSansPro", sans-serif;
   font-weight: 400;
   padding-top: 5px;
@@ -936,22 +936,21 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     .caption-mobile-text{
-      font-size: 14px;
-  padding: 0px;
-  color: #6e6e6e;
-  font-family: "SourceSansPro", sans-serif;
-  font-weight: lighter;
+      font-size: 0.75em !important;
+      padding: 0px;
+      color: #6e6e6e;
+      font-family: "SourceSansPro", sans-serif;
+      font-weight: lighter;
     }
 
     .caption-mobile-text-title{
-      font-size: 12px !important;
+      font-size: 1em !important;
     }
     .author-mobile{
-      font-size: 11px !important;
+      font-size: 0.75em !important;
     }
 
-
-        /* hide stuff on mobile */
+    /* hide stuff on mobile */
     #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide {
         display: none;
     }
@@ -1017,13 +1016,13 @@ i.fa.fa-lg.fa-instagram:hover {
 
 }
 
-h4.caption-mobile-text{
+/* h4.caption-mobile-text{
   font-size: 16px !important;
-padding: 0px;
-color: #6e6e6e;
-font-family: "SourceSansPro", sans-serif;
-font-weight: lighter;
-}
+  padding: 0px;
+  color: #6e6e6e;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: lighter;
+}*/
 
 
 a {
