@@ -607,6 +607,7 @@ text-align: center;
 font-family: 'SourceSansPro' sans-serif;
 font-weight: 700;
 line-height: 1.3em/25px !important;
+margin: 0px !important;
 }
 
 .section_name {
