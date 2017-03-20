@@ -332,14 +332,6 @@ body {
     margin-right: auto;
 }
 
-.author {
-    color: #6e6e6e;
-    font-size: 14px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 0px !important;
-}
-
 p.sentence {
     font-family: 'Vollkorn', serif;
 }
@@ -362,7 +354,7 @@ form.navbar-form {
 }
 
 
-.subsectiontitle {
+.sub_title {
   font-size: 12px;
   font-weight: 400 !important;
   display: block;
@@ -372,7 +364,6 @@ form.navbar-form {
 }
 ul.navi-section, ul navi-section a:hover, #myFooter, .subsectiontitle, .author, #clock, #srch-term {
     font-family: 'SourceSansPro', sans-serif !important;
-    font-weight: lighter;
   padding-bottom: 10px;
 }
 
@@ -438,17 +429,44 @@ li.dropdown {
     padding: 5px;
 }
 
-h4.author, .text-center {
+.text-center {
     text-align: center;
     font-family: "SourceSansPro", sans-serif;
     font-weight: lighter;
     font-size: 14px;
 }
-h4.subsectiontitle {
+
+.author {
+    color: #333;
+    font-family: "SourceSansPro", sans-serif;
     font-size: 14px;
-    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px !important;
+    font-weight: 600;
+    line-height: 1.3em/17px;
+    }
+
+.subsectiontitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3em/21px;
 }
 
+.paragraph {
+  font-family: 'SourceSansPro' sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5em/26px;
+}
+
+
+.paragraph-hide {
+  font-family: 'SourceSansPro' sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5em/26px;
+}
 
 .author-left {
     color: #6e6e6e;
@@ -549,17 +567,44 @@ h4.subsectiontitle {
     padding: 30px !important;
 }
 
+.sectionhome{
+font-size: 50px;
+margin: 0px !important;
+text-align: center;
+font-family: 'SourceSansPro' sans-serif;
+font-weight: 700;
+line-height: 1.3em/77px !important;
+}
+
+.little-subsections{
+  font-size: 15px;
+text-align: center;
+font-family: 'SourceSansPro' sans-serif;
+font-weight: 700;
+line-height: 1.3em/25px !important;
+}
+
+.little-sections{
+font-size: 25px;
+text-align: center;
+font-family: 'SourceSansPro' sans-serif;
+font-weight: 700;
+line-height: 1.3em/25px !important;
+}
+
 .section_name {
-    font-size: 40px;
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    font-size: 30px;
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 700;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
     text-align: center;
+    line-height: 1.3em/44px;
+
 }
 
 a {
-    color: black;
+    color: #333;
 }
 
 h1 {
@@ -862,7 +907,7 @@ i.fa.fa-lg.fa-instagram:hover {
       padding-top: 5px;
     }
     /* hide stuff on mobile */
-    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop, .paragraph-hide {
+    #navigation, .tritonlogo, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide {
         display: none;
     }
 
