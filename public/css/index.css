@@ -958,19 +958,25 @@ i.fa.fa-lg.fa-instagram:hover {
         top: -125px;
     }
 
+    .text {
+      padding: 5px;
+    }
+
     .caption-mobile-text{
-      font-size: 0.75em !important;
+      font-size: 0.5em !important;
       padding: 0px;
       color: #6e6e6e;
       font-family: 'SourceSansPro', sans-serif;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .caption-mobile-text-title{
       font-size: 1em !important;
     }
+    
     .author-mobile{
       font-size: 0.75em !important;
+      margin-bottom: 0px;
     }
 
     /* hide stuff on mobile */
@@ -1000,7 +1006,7 @@ i.fa.fa-lg.fa-instagram:hover {
         font-size: 12px;
     }
     .button {
-        width: 50% !important;
+        width: 50%;
     }
     .slideshow-caption1 {
         opacity: 0.85;
@@ -1036,6 +1042,9 @@ h4.caption-mobile-text{
   font-weight: lighter;
 }
 
+p.author-mobile {
+  margin: 0px;
+}
 
 a {
     text-decoration: none;
