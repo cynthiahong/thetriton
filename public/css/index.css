@@ -624,32 +624,25 @@ li.dropdown {
     font-weight: 700;
     line-height: 1.3em !important;
 }
-.subsectionhome {
-    font-size: 40px;
-    font-family: 'SourceSansPro', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin: 0px !important;
-    line-height: 1.3em !important;
-}
+
 
 .little-subsections{
-    font-size: 15px;
-    text-align: center;
-    font-family: 'SourceSansPro', sans-serif;
-    font-weight: 500;
-    line-height: 1.3em !important;
-    color: #222 !important;
-    margin-bottom: 5px;
+  font-size: 15px;
+text-align: center;
+font-family: 'SourceSansPro' sans-serif;
+font-weight: 500;
+line-height: 1.3em !important;
+color: #222 !important;
+margin-bottom: 5px;
 }
 
 .little-sections{
-    font-size: 22px;
-    text-align: center;
-    font-family: 'SourceSansPro', sans-serif;
-    font-weight: 500;
-    line-height: 1.3em !important;
-    margin: 0px !important;
+font-size: 22px;
+text-align: center;
+font-family: 'SourceSansPro', sans-serif;
+font-weight: 500;
+line-height: 1.3em !important;
+margin: 0px !important;
 }
 
 .section_name {
@@ -1039,23 +1032,6 @@ i.fa.fa-lg.fa-instagram:hover {
         width: 100%;
         background-color: black;
         top: 120px;
-    }
-    .img-responsive.pad-top{
-        padding: 0px;
-    }
-    .col-md-5.pad-top {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .little-sections {
-        display: none;
-    }
-    #desktop-only {
-        display: none;
-    }
-    .pagination.p12 {
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
 }
 
@@ -1550,7 +1526,7 @@ p, li {
     #myFooter {
         text-align: center;
     }
-    h4, p.author-left, .author-mobile, p.author, .subsectiontitle-left, .subsectiontitle, .center-mobile {
+    h4, p.author-left, .author-mobile, p.author, .subsectiontitle-left, p.subsectiontitle, .center-mobile {
       text-align: center;
     }
 }
