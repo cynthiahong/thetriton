@@ -423,10 +423,10 @@ li a, .navi-section2 {
     display: inline-block;
     text-align: center;
     padding: 14px 25px;
-    font-family: 'Source Sans Pro.' sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.3em/25px;
+    line-height: 1.3em;
 }
 
 li.dropdown {
@@ -492,7 +492,7 @@ li.dropdown {
     padding-top: 5px;
     margin: 0px !important;
     font-weight: 500;
-    line-height: 1.3em/17px;
+    line-height: 1.3em;
 }
 
 
@@ -500,14 +500,14 @@ li.dropdown {
   font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.5em/26px;
+  line-height: 1.5em;
 }
 
 .paragraph-hide {
   font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.5em/26px;
+  line-height: 1.5em;
 }
 
 .author-left {
@@ -610,8 +610,9 @@ li.dropdown {
 }
 
 .article-title {
+    line-height: 36px;
     font-size: 30px;
-    font-family: 'SourceSansPro' sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-weight: 600;
 }
 
@@ -619,9 +620,9 @@ li.dropdown {
     font-size: 50px;
     margin: 0px !important;
     text-align: center;
-    font-family: 'SourceSansPro' sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-weight: 700;
-    line-height: 1.3em/77px !important;
+    line-height: 1.3em !important;
 }
 
 
@@ -630,7 +631,7 @@ li.dropdown {
 text-align: center;
 font-family: 'SourceSansPro' sans-serif;
 font-weight: 500;
-line-height: 1.3em/25px !important;
+line-height: 1.3em !important;
 color: #222 !important;
 margin-bottom: 5px;
 }
@@ -640,7 +641,7 @@ font-size: 22px;
 text-align: center;
 font-family: 'SourceSansPro', sans-serif;
 font-weight: 500;
-line-height: 1.3em/25px !important;
+line-height: 1.3em !important;
 margin: 0px !important;
 }
 
@@ -651,7 +652,7 @@ margin: 0px !important;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
     text-align: center;
-    line-height: 1.3em/44px;
+    line-height: 1.3em;
 }
 
 .section_name_2{
@@ -661,7 +662,7 @@ margin: 0px !important;
     margin-top: 20px !important;
     margin-bottom: 10px !important;
     text-align: left;
-    line-height: 1.3em/44px;
+    line-height: 1.3em;
 }
 
 .section_subtitle_name_2{
@@ -671,7 +672,7 @@ margin: 0px !important;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
     text-align: left;
-    line-height: 1.3em/44px;
+    line-height: 1.3em;
 }
 
 a {
@@ -1525,10 +1526,8 @@ p, li {
     #myFooter {
         text-align: center;
     }
-    h4, p.author-left, .author-mobile, p.author, .subsectiontitle-left, p.subsectiontitle, .center-mobile{
+    h4, p.author-left, .author-mobile, p.author, .subsectiontitle-left, p.subsectiontitle, .center-mobile {
       text-align: center;
-    }{
-        text-align: center;
     }
 }
 
@@ -1737,6 +1736,7 @@ input.placeholder {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 #socialarea li {
@@ -1808,8 +1808,8 @@ li a .googleplus_social2 {
 }
 
 .paragraph_other {
-  font-family: 'SourceSansPro' sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5em/26px;
+  line-height: 1.5em;
 }
