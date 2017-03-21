@@ -981,7 +981,7 @@ i.fa.fa-lg.fa-instagram:hover {
     }
 
     /* hide stuff on mobile */
-    #navigation, .tritonlogo, #needed-padding, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide {
+    #navigation, .tritonlogo, #break, #needed-padding, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide {
         display: none;
     }
     .formbox {
