@@ -1,25 +1,16 @@
 https://cynthiahong.github.io/thetriton/
 
 # About
-<br />
 This is a redesign of a working prototype of The Triton, an online student-run newsource at UCSD.
-<br />
 Project span: 10 weeks
-<br />
 Last update: March 21, 2017
-<br />
-# User workflow:
-<br />
+### User workflow:
 Home -> News -> Campus News -> ERC Student Council..
-<br />
-Clickable pages:
-<br />
+
+###Clickable pages:
 • News
-<br />
 • Opinion
-<br />
 • A&E
-<br />
 • Student Life
 • About
 • Contact Us
@@ -33,11 +24,7 @@ Clickable pages:
 2. Push to master
 
 # Info
-<br />
 • Home page file is index.html
-<br />
 • JavaScript files are in 'js/index.js'
-<br />
 • CSS files are in 'public/css/index.css'
-<br />
 • Used "simpleWeather" for the weather widget
