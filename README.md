@@ -7,7 +7,7 @@ Last update: March 21, 2017
 ### User workflow:  
 Home -> News -> Campus News -> ERC Student Council..  
 
-###Clickable pages:  
+### Clickable pages:  
 • News  
 • Opinion  
 • A&E  
