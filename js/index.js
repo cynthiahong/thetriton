@@ -259,3 +259,10 @@ $('.slider').each(function() {
 
   advance();
 });
+
+
+$(document).ready(function() {
+    $('.close').on('click', function(e) {
+        $('.work-flow-box').remove();
+    });
+});

@@ -981,14 +981,14 @@ i.fa.fa-lg.fa-instagram:hover {
     .caption-mobile-text-title{
       font-size: 1em !important;
     }
-    
+
     .author-mobile{
       font-size: 0.75em !important;
       margin-bottom: 0px;
     }
 
     /* hide stuff on mobile */
-    #navigation, .tritonlogo, #needed-padding, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide {
+    #navigation, .tritonlogo, #needed-padding, #header, #socialarea, .nav-wrapper-desktop, .paragraph, .paragraph-hide, .work-flow-box {
         display: none;
     }
     .formbox {
@@ -1836,4 +1836,23 @@ li a .googleplus_social2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5em;
+}
+
+
+.work-flow-box{
+  width: 750px;
+  background-color: black;
+  opacity: 0.85;
+  position: fixed;
+  bottom: 20px;
+  left: 50px;
+  z-index: 99;
+  font-size: 12px;
+  color: white;
+  padding:10px;
+}
+
+.close, .close:hover{
+  color: white;
+  line-height: 0.5;
 }
